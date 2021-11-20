@@ -9,6 +9,8 @@ i am not the best at java as this is more of a test project to see how far i can
 
 please be aware that this mod does not use the official mappings but instead the version 20210309-1.16.5, and the mod id and display name when hovering over a item from the mod are different aswell. the hold shift for more info tooltip is also one tooltip is shared, meaning editing the tooltip that has the value "default" will change all items using the tooltip, if you want to change this, go to ModItems.java and in the else statment in the tooltip.add line of any item and change the default value to whatever you please, make sure to change the en-us json file (soon adding romanian json file) aswell when adding new tooltips
 
+this is probably common with other mods, but if you are editing the en_us json file do not delete the § symbol or the first letter that comes after it unless you want to change the color/format, good luck reading formating like the romium info tooltip lmao
+
 mod was made in intelij idea community edition, heres some steps that were put in by the default read me if you want to edit this mod similar to how i develop
 1. Open IDEA, and import project.
 2. Select your build.gradle file and have it import.
