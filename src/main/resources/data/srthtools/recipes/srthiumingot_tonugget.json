@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "srthtools:srthium"
+    }
+  ],
+  "result": {
+    "item": "srthtools:srthiumnugget",
+    "count": 9
+  }
+}
