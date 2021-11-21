@@ -23,7 +23,7 @@ public class ModItems {
  /* start of srthium items */
 
     public static final RegistryObject<Item> SRTHIUM = ITEMS.register("srthium",
-            () -> new Item(new Item.Properties().isImmuneToFire().rarity(Rarity.valueOf("epic")).maxStackSize(69 /* haha funny number hahahahah getting in the way of code i love it, stack size dosent even work lol */).group(ModItemGroup.SRTH_MODS)){
+            () -> new Item(new Item.Properties().isImmuneToFire().maxStackSize(69 /* haha funny number hahahahah getting in the way of code i love it, stack size dosent even work lol */).group(ModItemGroup.SRTH_MODS)){
                 @Override
                 public void addInformation(ItemStack stack, @Nullable World worldIn,
                                            List<ITextComponent> tooltip, ITooltipFlag flagIn) {
@@ -34,7 +34,7 @@ public class ModItems {
                     }
 
                 }
-            });
+             });
 
     public static final RegistryObject<Item> SRTHIUMNUGGET = ITEMS.register("srthiumnugget",
             () -> new Item(new Item.Properties().group(ModItemGroup.SRTH_MODS)){
@@ -132,7 +132,7 @@ public class ModItems {
     /* end of srthium items, start romium */
 
     public static final RegistryObject<Item> ROMIUM = ITEMS.register("romium",
-            () -> new Item(new Item.Properties().rarity(Rarity.valueOf("uncommon")).group(ModItemGroup.SRTH_MODS)){
+            () -> new Item(new Item.Properties().group(ModItemGroup.SRTH_MODS)){
     @Override
     public void addInformation(ItemStack stack, @Nullable World worldIn,
                                List<ITextComponent> tooltip, ITooltipFlag flagIn) {
