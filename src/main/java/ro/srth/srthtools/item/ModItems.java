@@ -28,7 +28,7 @@ public class ModItems {
                 public void addInformation(ItemStack stack, @Nullable World worldIn,
                                            List<ITextComponent> tooltip, ITooltipFlag flagIn) {
                     if(Screen.hasShiftDown())
-                        tooltip.add(new TranslationTextComponent(("tooltip.srthtools.srthiumshift")));
+                        tooltip.add(new TranslationTextComponent(("tooltip.srthtools.srthium")));
                     else {
                     tooltip.add(new TranslationTextComponent(("tooltip.srthtools.default")));
                     }
@@ -42,7 +42,7 @@ public class ModItems {
     public void addInformation(ItemStack stack, @Nullable World worldIn,
                                List<ITextComponent> tooltip, ITooltipFlag flagIn) {
         if(Screen.hasShiftDown())
-            tooltip.add(new TranslationTextComponent(("tooltip.srthtools.srthiumnuggetshift")));
+            tooltip.add(new TranslationTextComponent(("tooltip.srthtools.srthiumnugget")));
         else {
             tooltip.add(new TranslationTextComponent(("tooltip.srthtools.default")));
         }
@@ -51,29 +51,100 @@ public class ModItems {
 });
 
     public static final RegistryObject<Item> SRTHIUMSWORD = ITEMS.register("srthiumsword",
-            () -> new SwordItem(ModItemTier.SRTHIUM, 2, 1.2f,
-                    new Item.Properties().group(ModItemGroup.SRTH_MODS)));
+            () -> new SwordItem(ModItemTier.SRTHIUM, 2, 1f,
+                    new Item.Properties().group(ModItemGroup.SRTH_MODS)){
+                @Override
+                public void addInformation(ItemStack stack, @Nullable World worldIn,
+                                           List<ITextComponent> tooltip, ITooltipFlag flagIn) {
+                    if(Screen.hasShiftDown())
+                        tooltip.add(new TranslationTextComponent(("tooltip.srthtools.srthiumsword")));
+                    else {
+                        tooltip.add(new TranslationTextComponent(("tooltip.srthtools.default")));
+                    }
+
+                }
+            });
+
 
     public static final RegistryObject<Item> SRTHIUMPICKAXE = ITEMS.register("srthiumpickaxe",
             () -> new PickaxeItem(ModItemTier.SRTHIUM, -1, -1f,
-                    new Item.Properties().group(ModItemGroup.SRTH_MODS)));
+                    new Item.Properties().group(ModItemGroup.SRTH_MODS)){
+                @Override
+                public void addInformation(ItemStack stack, @Nullable World worldIn,
+                                           List<ITextComponent> tooltip, ITooltipFlag flagIn) {
+                    if(Screen.hasShiftDown())
+                        tooltip.add(new TranslationTextComponent(("tooltip.srthtools.srthiumpickaxe")));
+                    else {
+                        tooltip.add(new TranslationTextComponent(("tooltip.srthtools.default")));
+                    }
+
+                }
+            });
+
 
     public static final RegistryObject<Item> SRTHIUMAXE = ITEMS.register("srthiumaxe",
             () -> new AxeItem(ModItemTier.SRTHIUM, 5, -3f,
-                    new Item.Properties().group(ModItemGroup.SRTH_MODS)));
+                    new Item.Properties().group(ModItemGroup.SRTH_MODS)){
+                @Override
+                public void addInformation(ItemStack stack, @Nullable World worldIn,
+                                           List<ITextComponent> tooltip, ITooltipFlag flagIn) {
+                    if(Screen.hasShiftDown())
+                        tooltip.add(new TranslationTextComponent(("tooltip.srthtools.srthiumaxe")));
+                    else {
+                        tooltip.add(new TranslationTextComponent(("tooltip.srthtools.default")));
+                    }
+
+                }
+            });
+
+
+
 
     public static final RegistryObject<Item> SRTHIUMSHOVEL = ITEMS.register("srthiumshovel",
             () -> new ShovelItem(ModItemTier.SRTHIUM, -2, -1f,
-                    new Item.Properties().group(ModItemGroup.SRTH_MODS)));
+                    new Item.Properties().group(ModItemGroup.SRTH_MODS)){
+    @Override
+    public void addInformation(ItemStack stack, @Nullable World worldIn,
+                               List<ITextComponent> tooltip, ITooltipFlag flagIn) {
+        if(Screen.hasShiftDown())
+            tooltip.add(new TranslationTextComponent(("tooltip.srthtools.srthiumshovel")));
+        else {
+            tooltip.add(new TranslationTextComponent(("tooltip.srthtools.default")));
+        }
+
+    }
+});
 
     public static final RegistryObject<Item> SRTHIUMHOE = ITEMS.register("srthiumhoe",
             () -> new HoeItem(ModItemTier.SRTHIUM, -5, -1f,
-                    new Item.Properties().group(ModItemGroup.SRTH_MODS)));
+                    new Item.Properties().group(ModItemGroup.SRTH_MODS)){
+    @Override
+    public void addInformation(ItemStack stack, @Nullable World worldIn,
+                               List<ITextComponent> tooltip, ITooltipFlag flagIn) {
+        if(Screen.hasShiftDown())
+            tooltip.add(new TranslationTextComponent(("tooltip.srthtools.srthiumhoe")));
+        else {
+            tooltip.add(new TranslationTextComponent(("tooltip.srthtools.default")));
+        }
+
+    }
+});
 
     /* end of srthium items, start romium */
 
     public static final RegistryObject<Item> ROMIUM = ITEMS.register("romium",
-            () -> new Item(new Item.Properties().group(ModItemGroup.SRTH_MODS)));
+            () -> new Item(new Item.Properties().group(ModItemGroup.SRTH_MODS)){
+    @Override
+    public void addInformation(ItemStack stack, @Nullable World worldIn,
+                               List<ITextComponent> tooltip, ITooltipFlag flagIn) {
+        if(Screen.hasShiftDown())
+            tooltip.add(new TranslationTextComponent(("tooltip.srthtools.romium")));
+        else {
+            tooltip.add(new TranslationTextComponent(("tooltip.srthtools.default")));
+        }
+
+    }
+});
 
 
 
