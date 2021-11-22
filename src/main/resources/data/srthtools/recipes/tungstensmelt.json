@@ -1,9 +1,9 @@
 {
-  "type": "minecraft:smelting",
+  "type": "minecraft:blasting",
   "ingredient": {
     "item": "srthtools:tungstenore"
   },
   "result": "srthtools:tungsten",
-  "experience": 0.5,
-  "cookingtime": 400
+  "experience": 0.7,
+  "cookingtime": 200
 }

@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "srthtools:uraniumore"
+  },
+  "result": "srthtools:uranium",
+  "experience": 0.5,
+  "cookingtime": 200
+}

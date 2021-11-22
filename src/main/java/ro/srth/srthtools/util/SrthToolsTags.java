@@ -26,9 +26,18 @@ public class SrthToolsTags {
 
 
         public static final Tags.IOptionalNamedTag<Item> ROMIUM = createForgeTag("ingots/romium");
-        public static final Tags.IOptionalNamedTag<Item> RAWURANIUM = createForgeTag("ingots/rawuranium");
+        public static final Tags.IOptionalNamedTag<Item> ROMIUMNUGGET = createForgeTag("nuggets /romiumnugget");
+        public static final Tags.IOptionalNamedTag<Item> ROMIUMORE = createForgeTag("ores/romiumore");
+        public static final Tags.IOptionalNamedTag<Item> RAWURANIUM = createForgeTag("ingots/uranium");
+        public static final Tags.IOptionalNamedTag<Item> ENRICHEDURANIUM = createForgeTag("ingots/enricheduranium");
+        public static final Tags.IOptionalNamedTag<Item> URANIUM = createForgeTag("ingots/uranium");
+        public static final Tags.IOptionalNamedTag<Item> URANIUMORE = createForgeTag("ores/uranium");
         public static final Tags.IOptionalNamedTag<Item> COPPER = createForgeTag("ingots/copper");
+        public static final Tags.IOptionalNamedTag<Item> COPPERNUGGET = createForgeTag("nuggets/coppernugget");
+        public static final Tags.IOptionalNamedTag<Item> COPPERORE = createForgeTag("ores/copper");
         public static final Tags.IOptionalNamedTag<Item> TUNGSTEN = createForgeTag("ingots/tungsten");
+        public static final Tags.IOptionalNamedTag<Item> TUNGSTENNUGGET = createForgeTag("nuggets/tungsten");
+        public static final Tags.IOptionalNamedTag<Item> TUNGSTENORE = createForgeTag("ores/tungsten");
 
         private static Tags.IOptionalNamedTag<Item> createTag(String name) {
             return ItemTags.createOptional(new ResourceLocation(SrthTools.MOD_ID, name));
