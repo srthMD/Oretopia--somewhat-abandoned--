@@ -27,11 +27,15 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> NETHERSRTHIUMORE = registerBlock("nethersrthiumore",
             () -> new Block(AbstractBlock.Properties.create(Material.ROCK)
-                    .harvestLevel(2).setRequiresTool().harvestTool(ToolType.PICKAXE).hardnessAndResistance(6f)));
+                    .harvestLevel(3).setRequiresTool().harvestTool(ToolType.PICKAXE).hardnessAndResistance(6f)));
 
     public static final RegistryObject<Block> ROMIUMORE = registerBlock("romiumore",
             () -> new Block(AbstractBlock.Properties.create(Material.ROCK)
                     .harvestLevel(2).setRequiresTool().harvestTool(ToolType.PICKAXE).hardnessAndResistance(5f)));
+
+    public static final RegistryObject<Block> URANIUMORE = registerBlock("uraniumore",
+            () -> new Block(AbstractBlock.Properties.create(Material.ROCK)
+                    .harvestLevel(2).setRequiresTool().harvestTool(ToolType.PICKAXE).hardnessAndResistance(4f)));
 
 
     private static <T extends Block>RegistryObject<T> registerBlock(String name, Supplier<T> block) {

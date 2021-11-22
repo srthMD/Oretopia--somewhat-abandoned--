@@ -1,5 +1,6 @@
 {
   "block.srthtools.nethersrthiumore": "Nether Srthium Ore",
+  "block.srthtools.uraniumore": "Uranium Ore",
   "block.srthtools.romiumore": "Romium Ore",
   "block.srthtools.srthiumore": "Srthium Ore",
   "tooltip.srthtools.srthium": "§7Pretty much a compressed iron ingot with the §r§4§kgoogle§r §7logo pasted on it, somehow making it very tough.§r",
@@ -10,7 +11,7 @@
   "tooltip.srthtools.srthiumhoe": "§7§owhy§r\n",
   "tooltip.srthtools.srthiumshovel": "§7It breaks blocks so fast the shovel digs for you.\n",
   "tooltip.srthtools.romium": "§1Sa§elu§4t!§r",
-  "tooltip.srthtools.rawuranium": "§7A highly radioactive metal used atleast in this mod to make explosives. I wouldnt reccomend holding it because of the radiation but who cares its minecraft!\n\nRaw uranium usually has a yellow and black appearance to it.",
+  "tooltip.srthtools.rawuranium": "§7A highly radioactive metal used atleast in this mod to make explosives. I wouldnt reccomend holding it because of the radiation but who cares its minecraft!",
   "tooltip.srthtools.default": "Hold §eSHIFT§r for more info.",
   "item.srthtools.romium": "§eRomium",
   "item.srthtools.rawuranium": "Raw Uranium",
