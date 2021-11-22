@@ -8,7 +8,6 @@ import java.util.function.Supplier;
 
 public enum ModItemTier implements IItemTier {
 
-    SRTHIUM(4, 3500, 20f, 14f, 15, () -> Ingredient.fromItems(ModItems.SRTHIUM.get())),
     ROMIUM(3, 750, 7f, 8f, 8, () -> Ingredient.fromItems((ModItems.ROMIUM.get())))
 
     ;

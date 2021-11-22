@@ -25,7 +25,6 @@ public class SrthToolsTags {
     public static class Items {
 
 
-        public static final Tags.IOptionalNamedTag<Item> SRTHIUM = createForgeTag("ingots/srthium");
         public static final Tags.IOptionalNamedTag<Item> ROMIUM = createForgeTag("ingots/romium");
         public static final Tags.IOptionalNamedTag<Item> RAWURANIUM = createForgeTag("ingots/rawuranium");
 

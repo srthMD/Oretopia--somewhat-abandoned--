@@ -21,14 +21,6 @@ public class ModBlocks {
     public static final DeferredRegister<Block> BLOCKS =
             DeferredRegister.create(ForgeRegistries.BLOCKS, SrthTools.MOD_ID);
 
-    public static final RegistryObject<Block> SRTHIUMORE = registerBlock("srthiumore",
-            () -> new Block(AbstractBlock.Properties.create(Material.ROCK)
-                    .harvestLevel(3).setRequiresTool().harvestTool(ToolType.PICKAXE).hardnessAndResistance(7f)));
-
-    public static final RegistryObject<Block> NETHERSRTHIUMORE = registerBlock("nethersrthiumore",
-            () -> new Block(AbstractBlock.Properties.create(Material.ROCK)
-                    .harvestLevel(3).setRequiresTool().harvestTool(ToolType.PICKAXE).hardnessAndResistance(6f)));
-
     public static final RegistryObject<Block> ROMIUMORE = registerBlock("romiumore",
             () -> new Block(AbstractBlock.Properties.create(Material.ROCK)
                     .harvestLevel(2).setRequiresTool().harvestTool(ToolType.PICKAXE).hardnessAndResistance(5f)));
