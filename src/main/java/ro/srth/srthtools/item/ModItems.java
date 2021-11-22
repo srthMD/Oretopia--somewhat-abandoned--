@@ -60,7 +60,21 @@ public class ModItems {
                 public void addInformation(ItemStack stack, @Nullable World worldIn,
                                            List<ITextComponent> tooltip, ITooltipFlag flagIn) {
                     if(Screen.hasShiftDown())
-                        tooltip.add(new TranslationTextComponent(("tooltip.srthtools.copperingot")));
+                        tooltip.add(new TranslationTextComponent(("tooltip.srthtools.copper")));
+                    else {
+                        tooltip.add(new TranslationTextComponent(("tooltip.srthtools.default")));
+                    }
+
+                }
+            });
+
+    public static final RegistryObject<Item> TUNGSTEN = ITEMS.register("tungsten",
+            () -> new Item(new Item.Properties().isImmuneToFire().group(ModItemGroup.SRTH_MODS)){
+                @Override
+                public void addInformation(ItemStack stack, @Nullable World worldIn,
+                                           List<ITextComponent> tooltip, ITooltipFlag flagIn) {
+                    if(Screen.hasShiftDown())
+                        tooltip.add(new TranslationTextComponent(("tooltip.srthtools.tungsten")));
                     else {
                         tooltip.add(new TranslationTextComponent(("tooltip.srthtools.default")));
                     }

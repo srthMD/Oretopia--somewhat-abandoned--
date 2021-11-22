@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "srthtools:item/copper"
+    "layer0": "srthtools:item/tungsten"
   }
 }

@@ -2,12 +2,15 @@
   "block.srthtools.uraniumore": "Uranium Ore",
   "block.srthtools.romiumore": "Romium Ore",
   "block.srthtools.copperore": "Copper Ore",
+  "block.srthtools.tungstenore": "Tungsten Ore",
   "tooltip.srthtools.romium": "§1Sa§elu§4t!§r",
   "tooltip.srthtools.rawuranium": "§7A highly radioactive metal used atleast in this mod to make explosives. I wouldnt reccomend holding it because of the radiation but who cares its minecraft!",
   "tooltip.srthtools.copper": "§7A rather soft metal that is very conductive.",
+  "tooltip.srthtools.tungsten": "§7A metal so tough it can be put in lava and not melt.",
   "tooltip.srthtools.default": "Hold §eSHIFT§r for more info.",
   "item.srthtools.romium": "§eRomium",
   "item.srthtools.copper": "Copper Ingot",
+  "item.srthtools.tungsten": "Tungsten Ingot",
   "item.srthtools.rawuranium": "Raw Uranium",
   "itemGroup.srthtools": "Srth's Mods"
 }

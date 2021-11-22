@@ -8,8 +8,9 @@ import java.util.function.Supplier;
 
 public enum ModItemTier implements IItemTier {
 
-    ROMIUM(3, 750, 7f, 8f, 8, () -> Ingredient.fromItems((ModItems.ROMIUM.get()))),
-    COPPER(2, 300, 5f, 5f, 6, () -> Ingredient.fromItems((ModItems.ROMIUM.get())))
+    ROMIUM(3, 750, 7f, 7f, 10, () -> Ingredient.fromItems((ModItems.ROMIUM.get()))),
+    COPPER(2, 300, 5f, 5f, 6, () -> Ingredient.fromItems((ModItems.ROMIUM.get()))),
+    TUNGSTEN(3, 1200, 8f, 8f, 7, () -> Ingredient.fromItems((ModItems.ROMIUM.get()))),
     ;
 
     private final int harvestLevel;
