@@ -29,6 +29,10 @@ public class ModBlocks {
             () -> new Block(AbstractBlock.Properties.create(Material.ROCK)
                     .harvestLevel(2).setRequiresTool().harvestTool(ToolType.PICKAXE).hardnessAndResistance(4f)));
 
+    public static final RegistryObject<Block> COPPERORE = registerBlock("copperore",
+            () -> new Block(AbstractBlock.Properties.create(Material.ROCK)
+                    .harvestLevel(1).setRequiresTool().harvestTool(ToolType.PICKAXE).hardnessAndResistance(2.2f)));
+
 
     private static <T extends Block>RegistryObject<T> registerBlock(String name, Supplier<T> block) {
        RegistryObject<T> toReturn = BLOCKS.register(name, block);

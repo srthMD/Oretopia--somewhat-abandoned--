@@ -27,6 +27,7 @@ public class SrthToolsTags {
 
         public static final Tags.IOptionalNamedTag<Item> ROMIUM = createForgeTag("ingots/romium");
         public static final Tags.IOptionalNamedTag<Item> RAWURANIUM = createForgeTag("ingots/rawuranium");
+        public static final Tags.IOptionalNamedTag<Item> COPPER = createForgeTag("ingots/copper");
 
         private static Tags.IOptionalNamedTag<Item> createTag(String name) {
             return ItemTags.createOptional(new ResourceLocation(SrthTools.MOD_ID, name));

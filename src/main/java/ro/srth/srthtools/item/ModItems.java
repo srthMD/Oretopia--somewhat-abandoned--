@@ -22,7 +22,7 @@ public class ModItems {
 
 
 
-    /* end of srthium items, start romium */
+    /* non realistic items */
 
     public static final RegistryObject<Item> ROMIUM = ITEMS.register("romium",
             () -> new Item(new Item.Properties().group(ModItemGroup.SRTH_MODS)){
@@ -38,7 +38,7 @@ public class ModItems {
     }
 });
 
-    /* other stuff */
+    /* from periodic table */
 
     public static final RegistryObject<Item> RAWURANIUM = ITEMS.register("rawuranium",
             () -> new Item(new Item.Properties().group(ModItemGroup.SRTH_MODS)){
@@ -47,6 +47,20 @@ public class ModItems {
                                            List<ITextComponent> tooltip, ITooltipFlag flagIn) {
                     if(Screen.hasShiftDown())
                         tooltip.add(new TranslationTextComponent(("tooltip.srthtools.rawuranium")));
+                    else {
+                        tooltip.add(new TranslationTextComponent(("tooltip.srthtools.default")));
+                    }
+
+                }
+            });
+
+    public static final RegistryObject<Item> COPPER = ITEMS.register("copper",
+            () -> new Item(new Item.Properties().group(ModItemGroup.SRTH_MODS)){
+                @Override
+                public void addInformation(ItemStack stack, @Nullable World worldIn,
+                                           List<ITextComponent> tooltip, ITooltipFlag flagIn) {
+                    if(Screen.hasShiftDown())
+                        tooltip.add(new TranslationTextComponent(("tooltip.srthtools.copperingot")));
                     else {
                         tooltip.add(new TranslationTextComponent(("tooltip.srthtools.default")));
                     }
