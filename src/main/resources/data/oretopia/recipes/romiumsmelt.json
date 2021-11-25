@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "oretopia:romiumore"
+  },
+  "result": "oretopia:romium",
+  "experience": 0.5,
+  "cookingtime": 200
+}

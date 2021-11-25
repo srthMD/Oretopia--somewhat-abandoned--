@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "oretopia:romium"
+    }
+  ],
+  "result": {
+    "item": "oretopia:romiumnugget",
+    "count": 9
+  }
+}

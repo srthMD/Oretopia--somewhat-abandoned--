@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "oretopia:radioumore"
+  },
+  "result": "oretopia:radioum",
+  "experience": 1,
+  "cookingtime": 400
+}

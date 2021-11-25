@@ -1,9 +1,0 @@
-{
-  "type": "minecraft:blasting",
-  "ingredient": {
-    "item": "srthtools:copperore"
-  },
-  "result": "srthtools:copper",
-  "experience": 0.5,
-  "cookingtime": 100
-}

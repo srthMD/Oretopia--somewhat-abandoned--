@@ -1,9 +1,0 @@
-{
-  "type": "minecraft:blasting",
-  "ingredient": {
-    "item": "srthtools:rawuranium"
-  },
-  "result": "srthtools:uranium",
-  "experience": 1,
-  "cookingtime": 100
-}

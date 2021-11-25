@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "oretopia:oretopium"
+    }
+  ],
+  "result": {
+    "item": "oretopia:oretopiumnugget",
+    "count": 9
+  }
+}

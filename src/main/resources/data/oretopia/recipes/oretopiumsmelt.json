@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "oretopia:oretopiumore"
+  },
+  "result": "oretopia:oretopium",
+  "experience": 1.2,
+  "cookingtime": 700
+}
