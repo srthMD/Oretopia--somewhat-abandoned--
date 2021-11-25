@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "## ",
+    " S ",
+    " S "
+  ],
+  "key": {
+    "#": {
+      "item": "srthtools:srthium"
+    },
+    "S": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "srthtools:srthiumhoe"
+  }
+}

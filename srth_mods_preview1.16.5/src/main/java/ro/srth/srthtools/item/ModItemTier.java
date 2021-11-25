@@ -1,4 +1,4 @@
-package ro.srth.oretopia.item;
+package ro.srth.srthtools.item;
 
 import net.minecraft.item.IItemTier;
 import net.minecraft.item.crafting.Ingredient;
@@ -8,14 +8,9 @@ import java.util.function.Supplier;
 
 public enum ModItemTier implements IItemTier {
 
-    ROMIUM(3, 750, 7f, 7f, 10, () -> Ingredient.fromItems((ModItems.ROMIUM.get()))),
-    COPPER(2, 300, 5f, 4f, 6, () -> Ingredient.fromItems((ModItems.COPPER.get()))),
-    TUNGSTEN(3, 1000, 8f, 8f, 7, () -> Ingredient.fromItems((ModItems.TUNGSTEN.get()))),
-    COBALT(2, 400, 5.5f, 4f, 6, () -> Ingredient.fromItems((ModItems.COBALT.get()))),
-    CHROMIUM(3, 700, 7.5f, 7f, 8, () -> Ingredient.fromItems((ModItems.CHROMIUM.get()))),
-    RUBY(4, 1400, 9f, 9f, 12, () -> Ingredient.fromItems((ModItems.RUBY.get()))),
-    RADIOUM(4, 1300, 8f, 9f, 9, () -> Ingredient.fromItems((ModItems.RADIOUM.get()))),
-    ORETOPIUM(4, 2000, 10f, 11f, 15, () -> Ingredient.fromItems((ModItems.ORETOPIUM.get()))),
+    SRTHIUM(4, 3500, 20f, 14f, 15, () -> Ingredient.fromItems(ModItems.SRTHIUM.get())),
+    ROMIUM(3, 750, 7f, 8f, 8, () -> Ingredient.fromItems((ModItems.ROMIUM.get())))
+
     ;
 
     private final int harvestLevel;

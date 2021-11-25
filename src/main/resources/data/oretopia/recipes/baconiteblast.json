@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:blasting",
+  "ingredient": {
+    "item": "oretopia:rawbaconite"
+  },
+  "result": "oretopia:cookedbaconite",
+  "experience": 0.5,
+  "cookingtime": 138
+}

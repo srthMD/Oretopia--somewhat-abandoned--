@@ -21,9 +21,6 @@ public class ModItems {
             DeferredRegister.create(ForgeRegistries.ITEMS, oretopia.MOD_ID);
 
 
-
-    /* non realistic items */
-
     public static final RegistryObject<Item> ROMIUM = ITEMS.register("romium",
             () -> new Item(new Item.Properties().group(ModItemGroup.oretopia)){
     @Override
@@ -126,8 +123,6 @@ public class ModItems {
 
                 }
             });
-
-    /* from periodic table */
 
     public static final RegistryObject<Item> RAWURANIUM = ITEMS.register("rawuranium",
             () -> new Item(new Item.Properties().group(ModItemGroup.oretopia)){
@@ -350,6 +345,38 @@ public class ModItems {
                                            List<ITextComponent> tooltip, ITooltipFlag flagIn) {
                     if(Screen.hasShiftDown())
                         tooltip.add(new TranslationTextComponent(("tooltip.oretopia.radioumnugget")));
+                    else {
+                        tooltip.add(new TranslationTextComponent(("tooltip.oretopia.default")));
+                    }
+
+                }
+            });
+
+    public static final RegistryObject<Item> RAWBACONITE = ITEMS.register("rawbaconite",
+            () -> new Item(new Item.Properties()
+                    .food(new Food.Builder().hunger(3).saturation(0.2f).build())
+                    .isImmuneToFire().group(ModItemGroup.oretopia)){
+                @Override
+                public void addInformation(ItemStack stack, @Nullable World worldIn,
+                                           List<ITextComponent> tooltip, ITooltipFlag flagIn) {
+                    if(Screen.hasShiftDown())
+                        tooltip.add(new TranslationTextComponent(("tooltip.oretopia.rawbaconite")));
+                    else {
+                        tooltip.add(new TranslationTextComponent(("tooltip.oretopia.default")));
+                    }
+
+                }
+            });
+
+    public static final RegistryObject<Item> COOKEDBACONITE = ITEMS.register("cookedbaconite",
+            () -> new Item(new Item.Properties()
+                    .food(new Food.Builder().hunger(8).saturation(0.5f).build())
+                    .isImmuneToFire().group(ModItemGroup.oretopia)){
+                @Override
+                public void addInformation(ItemStack stack, @Nullable World worldIn,
+                                           List<ITextComponent> tooltip, ITooltipFlag flagIn) {
+                    if(Screen.hasShiftDown())
+                        tooltip.add(new TranslationTextComponent(("tooltip.oretopia.cookedbaconite")));
                     else {
                         tooltip.add(new TranslationTextComponent(("tooltip.oretopia.default")));
                     }
