@@ -1,9 +1,0 @@
-{
-  "type": "minecraft:smelting",
-  "ingredient": {
-    "item": "srthtools:srthiumore"
-  },
-  "result": "srthtools:srthium",
-  "experience": 1,
-  "cookingtime": 3000
-}
