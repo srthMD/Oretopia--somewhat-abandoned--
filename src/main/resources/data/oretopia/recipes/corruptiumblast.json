@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:blasting",
+  "ingredient": {
+    "item": "oretopia:end_corruptiumore"
+  },
+  "result": "oretopia:corruptium",
+  "experience": 2,
+  "cookingtime": 1000
+}

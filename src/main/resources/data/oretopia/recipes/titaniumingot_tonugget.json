@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "oretopia:titanium"
+    }
+  ],
+  "result": {
+    "item": "oretopia:titaniumnugget",
+    "count": 9
+  }
+}

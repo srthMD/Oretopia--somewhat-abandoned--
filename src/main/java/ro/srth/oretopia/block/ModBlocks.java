@@ -35,7 +35,7 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> TUNGSTENORE = registerBlock("tungstenore",
             () -> new Block(AbstractBlock.Properties.create(Material.ROCK)
-                    .harvestLevel(3).setRequiresTool().harvestTool(ToolType.PICKAXE).hardnessAndResistance(6.5f)));
+                    .harvestLevel(4).setRequiresTool().harvestTool(ToolType.PICKAXE).hardnessAndResistance(8.5f)));
 
     public static final RegistryObject<Block> RUBYORE = registerBlock("rubyore",
             () -> new Block(AbstractBlock.Properties.create(Material.ROCK)
@@ -64,6 +64,14 @@ public class ModBlocks {
     public static final RegistryObject<Block> BACONITEORE = registerBlock("baconiteore",
             () -> new Block(AbstractBlock.Properties.create(Material.ROCK)
                     .harvestLevel(2).setRequiresTool().harvestTool(ToolType.PICKAXE).hardnessAndResistance(4.5f)));
+
+    public static final RegistryObject<Block> TITANIUMORE = registerBlock("titaniumore",
+            () -> new Block(AbstractBlock.Properties.create(Material.ROCK)
+                    .harvestLevel(3).setRequiresTool().harvestTool(ToolType.PICKAXE).hardnessAndResistance(7f)));
+
+    public static final RegistryObject<Block> END_CORRUPTIUMORE = registerBlock("end_corruptiumore",
+            () -> new Block(AbstractBlock.Properties.create(Material.ROCK)
+                    .harvestLevel(4).setRequiresTool().harvestTool(ToolType.PICKAXE).hardnessAndResistance(25f)));
 
 
 

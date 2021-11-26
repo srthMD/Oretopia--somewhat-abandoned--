@@ -46,6 +46,21 @@ public class oretopiaTags {
         public static final Tags.IOptionalNamedTag<Item> COBALTORE = createForgeTag("ores/cobalt");
         public static final Tags.IOptionalNamedTag<Item> RUBYORE = createForgeTag("ores/ruby");
         public static final Tags.IOptionalNamedTag<Item> RUBY = createForgeTag("gems/ruby");
+        public static final Tags.IOptionalNamedTag<Item> ORETOPIUM = createForgeTag("ingots/oretopium");
+        public static final Tags.IOptionalNamedTag<Item> ORETOPIUMNUGGET = createForgeTag("nuggets/oretopium");
+        public static final Tags.IOptionalNamedTag<Item> ORETOPIUMORE = createForgeTag("ores/oretopium");
+        public static final Tags.IOptionalNamedTag<Item> RADIOUMORE = createForgeTag("ores/radioum");
+        public static final Tags.IOptionalNamedTag<Item> RADIOUM = createForgeTag("ingots/radioum");
+        public static final Tags.IOptionalNamedTag<Item> RADIOUMNUGGET = createForgeTag("nuggets/radioum");
+        public static final Tags.IOptionalNamedTag<Item> TITANIUMNUGGET = createForgeTag("nuggets/titanium");
+        public static final Tags.IOptionalNamedTag<Item> TITANIUM = createForgeTag("ingots/titanium");
+        public static final Tags.IOptionalNamedTag<Item> TITANIUMORE = createForgeTag("ores/titanium");
+        public static final Tags.IOptionalNamedTag<Item> CORRUPTIUMNUGGET = createForgeTag("nuggets/corruptium");
+        public static final Tags.IOptionalNamedTag<Item> CORRUPTIUM = createForgeTag("ingots/corruptium");
+        public static final Tags.IOptionalNamedTag<Item> END_CORRUPTIUMORE = createForgeTag("ores/corruptium");
+        public static final Tags.IOptionalNamedTag<Item> RAWBACONITE = createForgeTag("ingots/rawbaconite");
+        public static final Tags.IOptionalNamedTag<Item> BACONITEORE = createForgeTag("ores/baconite");
+        public static final Tags.IOptionalNamedTag<Item> COOKEDBACONITE = createForgeTag("ingots/cookedbaconite");
 
         private static Tags.IOptionalNamedTag<Item> createTag(String name) {
             return ItemTags.createOptional(new ResourceLocation(oretopia.MOD_ID, name));

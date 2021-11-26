@@ -384,6 +384,64 @@ public class ModItems {
                 }
             });
 
+    public static final RegistryObject<Item> CORRUPTIUMNUGGET = ITEMS.register("corruptiumnugget",
+            () -> new Item(new Item.Properties().isImmuneToFire().group(ModItemGroup.oretopia)){
+                @Override
+                public void addInformation(ItemStack stack, @Nullable World worldIn,
+                                           List<ITextComponent> tooltip, ITooltipFlag flagIn) {
+                    if(Screen.hasAltDown())
+                        tooltip.add(new TranslationTextComponent(("tooltip.oretopia.corruptiumnugget")));
+                    else {
+                        tooltip.add(new TranslationTextComponent(("tooltip.oretopia.corrupt")));
+                    }
+
+                }
+            });
+
+    public static final RegistryObject<Item> CORRUPTIUM = ITEMS.register("corruptium",
+            () -> new Item(new Item.Properties().isImmuneToFire().group(ModItemGroup.oretopia)){
+                @Override
+                public void addInformation(ItemStack stack, @Nullable World worldIn,
+                                           List<ITextComponent> tooltip, ITooltipFlag flagIn) {
+                    if(Screen.hasAltDown())
+                        tooltip.add(new TranslationTextComponent(("tooltip.oretopia.corruptium")));
+                    else {
+                        tooltip.add(new TranslationTextComponent(("tooltip.oretopia.corrupt")));
+                    }
+
+                }
+            });
+
+    public static final RegistryObject<Item> TITANIUM = ITEMS.register("titanium",
+            () -> new Item(new Item.Properties().isImmuneToFire().group(ModItemGroup.oretopia)){
+                @Override
+                public void addInformation(ItemStack stack, @Nullable World worldIn,
+                                           List<ITextComponent> tooltip, ITooltipFlag flagIn) {
+                    if(Screen.hasShiftDown())
+                        tooltip.add(new TranslationTextComponent(("tooltip.oretopia.titanium")));
+                    else {
+                        tooltip.add(new TranslationTextComponent(("tooltip.oretopia.default")));
+                    }
+
+                }
+            });
+
+    public static final RegistryObject<Item> TITANIUMNUGGET = ITEMS.register("titaniumnugget",
+            () -> new Item(new Item.Properties().isImmuneToFire().group(ModItemGroup.oretopia)){
+                @Override
+                public void addInformation(ItemStack stack, @Nullable World worldIn,
+                                           List<ITextComponent> tooltip, ITooltipFlag flagIn) {
+                    if(Screen.hasShiftDown())
+                        tooltip.add(new TranslationTextComponent(("tooltip.oretopia.titaniumnugget")));
+                    else {
+                        tooltip.add(new TranslationTextComponent(("tooltip.oretopia.default")));
+                    }
+
+                }
+            });
+
+
+
 
 
 
