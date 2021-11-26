@@ -15,7 +15,7 @@ public enum OreType {
     ORETOPIUM(Lazy.of(ModBlocks.ORETOPIUMORE), 3, 3, 10, 6),
     URANIUM(Lazy.of(ModBlocks.URANIUMORE), 4, 10, 50, 6),
     RADIOUM(Lazy.of(ModBlocks.RADIOUMORE), 3, 3, 15, 6),
-    NETHER_RADIOUMORE(Lazy.of(ModBlocks.NETHER_RADIOUMORE), 5, 10, 80, 6),
+    NETHER_RADIOUMORE(Lazy.of(ModBlocks.NETHER_RADIOUMORE), 6, 10, 80, 15),
     BACONITE(Lazy.of(ModBlocks.BACONITEORE), 5, 10, 50, 7),
 
     ;
