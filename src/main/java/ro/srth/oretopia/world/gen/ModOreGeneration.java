@@ -36,6 +36,8 @@ public class ModOreGeneration {
         spawnOreInAllBiomes(OreType.BACONITE, event, Dimension.OVERWORLD.toString());
         spawnOreInAllBiomes(OreType.TITANIUM, event, Dimension.OVERWORLD.toString());
         spawnOreInAllBiomes(OreType.CORRUPTIUM, event, Dimension.THE_END.toString());
+        spawnOreInAllBiomes(OreType.ENDERSHARD, event, Dimension.OVERWORLD.toString());
+        spawnOreInAllBiomes(OreType.END_ENDERSHARD, event, Dimension.THE_END.toString());
     }
 
 

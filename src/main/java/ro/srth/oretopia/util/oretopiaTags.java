@@ -60,6 +60,9 @@ public class oretopiaTags {
         public static final Tags.IOptionalNamedTag<Item> END_CORRUPTIUMORE = createForgeTag("ores/corruptium");
         public static final Tags.IOptionalNamedTag<Item> RAWBACONITE = createForgeTag("ingots/rawbaconite");
         public static final Tags.IOptionalNamedTag<Item> BACONITEORE = createForgeTag("ores/baconite");
+        public static final Tags.IOptionalNamedTag<Item> END_ENDERIUMORE = createForgeTag("ores/end_enderiumore");
+        public static final Tags.IOptionalNamedTag<Item> ENDERIUMORE = createForgeTag("ores/enderium");
+        public static final Tags.IOptionalNamedTag<Item> ENDERSHARD = createForgeTag("shards/ender");
         public static final Tags.IOptionalNamedTag<Item> COOKEDBACONITE = createForgeTag("ingots/cookedbaconite");
 
         private static Tags.IOptionalNamedTag<Item> createTag(String name) {

@@ -440,6 +440,20 @@ public class ModItems {
                 }
             });
 
+    public static final RegistryObject<Item> ENDERSHARD = ITEMS.register("endershard",
+            () -> new Item(new Item.Properties().isImmuneToFire().group(ModItemGroup.oretopia)){
+                @Override
+                public void addInformation(ItemStack stack, @Nullable World worldIn,
+                                           List<ITextComponent> tooltip, ITooltipFlag flagIn) {
+                    if(Screen.hasShiftDown())
+                        tooltip.add(new TranslationTextComponent(("tooltip.oretopia.endershard")));
+                    else {
+                        tooltip.add(new TranslationTextComponent(("tooltip.oretopia.default")));
+                    }
+
+                }
+            });
+
 
 
 

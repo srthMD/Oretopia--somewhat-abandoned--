@@ -19,6 +19,8 @@ public enum OreType {
     BACONITE(Lazy.of(ModBlocks.BACONITEORE), 6, 10, 50, 7),
     TITANIUM(Lazy.of(ModBlocks.TITANIUMORE), 5, 10, 30, 6),
     CORRUPTIUM(Lazy.of(ModBlocks.END_CORRUPTIUMORE), 4, 30, 65, 9),
+    ENDERSHARD(Lazy.of(ModBlocks.ENDERIUMORE), 4, 10, 30, 6),
+    END_ENDERSHARD(Lazy.of(ModBlocks.END_ENDERIUMORE), 4, 20, 65, 11),
 
     ;
 

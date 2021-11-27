@@ -71,7 +71,15 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> END_CORRUPTIUMORE = registerBlock("end_corruptiumore",
             () -> new Block(AbstractBlock.Properties.create(Material.ROCK)
-                    .harvestLevel(4).setRequiresTool().harvestTool(ToolType.PICKAXE).hardnessAndResistance(25f)));
+                    .harvestLevel(4).setRequiresTool().harvestTool(ToolType.PICKAXE).hardnessAndResistance(30f)));
+
+    public static final RegistryObject<Block> END_ENDERIUMORE = registerBlock("end_enderiumore",
+            () -> new Block(AbstractBlock.Properties.create(Material.ROCK)
+                    .harvestLevel(2).setRequiresTool().harvestTool(ToolType.PICKAXE).hardnessAndResistance(6.5f)));
+
+    public static final RegistryObject<Block> ENDERIUMORE = registerBlock("enderiumore",
+            () -> new Block(AbstractBlock.Properties.create(Material.ROCK)
+                    .harvestLevel(2).setRequiresTool().harvestTool(ToolType.PICKAXE).hardnessAndResistance(6f)));
 
 
 

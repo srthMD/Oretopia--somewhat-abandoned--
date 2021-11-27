@@ -17,6 +17,7 @@ public enum ModItemTier implements IItemTier {
     RADIOUM(4, 1300, 8f, 9f, 9, () -> Ingredient.fromItems((ModItems.RADIOUM.get()))),
     ORETOPIUM(4, 2000, 10f, 11f, 15, () -> Ingredient.fromItems((ModItems.ORETOPIUM.get()))),
     TITANIUM(3, 800, 8f, 8f, 6, () -> Ingredient.fromItems((ModItems.TITANIUM.get()))),
+    CORRUPTIUM(3, 3000, 14f, 15f, 20, () -> Ingredient.fromItems((ModItems.TITANIUM.get()))),
     ;
 
     private final int harvestLevel;
