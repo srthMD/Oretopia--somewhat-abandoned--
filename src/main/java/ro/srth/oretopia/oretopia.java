@@ -18,6 +18,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import ro.srth.oretopia.block.ModBlocks;
 import ro.srth.oretopia.item.ModItems;
+import ro.srth.oretopia.util.ModSoundEvents;
 /* im sorry can i have the kids back now */
 import java.util.stream.Collectors;
 
@@ -36,6 +37,7 @@ public class oretopia
 
         ModItems.register(eventBus);
         ModBlocks.register(eventBus);
+        ModSoundEvents.register((eventBus));
 
         eventBus.addListener(this::setup);
         // Register the enqueueIMC method for modloading

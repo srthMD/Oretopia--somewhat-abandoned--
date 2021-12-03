@@ -1,0 +1,54 @@
+{
+  "modcave1": {
+    "category": "ambient",
+    "subtitle": "oretopia.modcave1",
+    "sounds": [
+      "oretopia:modcave1"
+    ]
+  },
+
+  "modcave2": {
+    "category": "ambient",
+    "subtitle": "oretopia.modcave2",
+    "sounds": [
+      "oretopia:modcave2"
+    ]
+  },
+
+  "modcave3": {
+    "category": "ambient",
+    "subtitle": "oretopia.modcave3",
+    "sounds": [
+      "oretopia:modcave3"
+    ]
+  },
+  "modcave4": {
+    "category": "ambient",
+    "subtitle": "oretopia.modcave4",
+    "sounds": [
+      "oretopia:modcave4"
+    ]
+  },
+  "modcave5": {
+    "category": "ambient",
+    "subtitle": "oretopia.modcave5",
+    "sounds": [
+      "oretopia:modcave5"
+    ]
+  },
+  "modcave6": {
+    "category": "ambient",
+    "subtitle": "oretopia.modcave6",
+    "sounds": [
+      "oretopia:modcave6"
+    ]
+  },
+  "modcave7": {
+    "category": "ambient",
+    "subtitle": "oretopia.modcave7",
+    "sounds": [
+      "oretopia:modcave7"
+    ]
+  }
+
+}
