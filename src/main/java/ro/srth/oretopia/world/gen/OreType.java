@@ -21,6 +21,7 @@ public enum OreType {
     CORRUPTIUM(Lazy.of(ModBlocks.END_CORRUPTIUMORE), 4, 30, 65, 9),
     ENDERSHARD(Lazy.of(ModBlocks.ENDERIUMORE), 4, 10, 30, 6),
     END_ENDERSHARD(Lazy.of(ModBlocks.END_ENDERIUMORE), 4, 20, 65, 11),
+    MUSICDISCORE(Lazy.of(ModBlocks.MUSICDISCORE), 3, 20, 50, 7),
 
     ;
 

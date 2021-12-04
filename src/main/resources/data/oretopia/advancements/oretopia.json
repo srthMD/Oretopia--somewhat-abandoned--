@@ -1,0 +1,19 @@
+{
+  "display": {
+    "icon": {
+      "item": "oretopia:romium"
+    },
+    "title": "Oretopia",
+    "description": "Time to go mining!",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false,
+    "background": "oretopia:textures/block/romiumore.png"
+  },
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:tick",
+      "conditions": {}
+    }
+  }
+}

@@ -3,6 +3,9 @@ package ro.srth.oretopia.item;
 import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.item.*;
+import net.minecraft.potion.Effect;
+import net.minecraft.potion.EffectInstance;
+import net.minecraft.potion.Effects;
 import net.minecraft.util.text.ITextComponent;
 import net.minecraft.util.text.TranslationTextComponent;
 import net.minecraft.world.World;
@@ -14,6 +17,7 @@ import ro.srth.oretopia.oretopia;
 
 import javax.annotation.Nullable;
 import java.util.List;
+import java.util.function.Supplier;
 
 public class ModItems {
 
@@ -269,7 +273,7 @@ public class ModItems {
 
 
     public static final RegistryObject<Item> COBALT = ITEMS.register("cobalt",
-            () -> new Item(new Item.Properties().isImmuneToFire().group(ModItemGroup.oretopia)){
+            () -> new Item(new Item.Properties().group(ModItemGroup.oretopia)){
                 @Override
                 public void addInformation(ItemStack stack, @Nullable World worldIn,
                                            List<ITextComponent> tooltip, ITooltipFlag flagIn) {
@@ -283,7 +287,7 @@ public class ModItems {
             });
 
     public static final RegistryObject<Item> COBALTNUGGET = ITEMS.register("cobaltnugget",
-            () -> new Item(new Item.Properties().isImmuneToFire().group(ModItemGroup.oretopia)){
+            () -> new Item(new Item.Properties().group(ModItemGroup.oretopia)){
                 @Override
                 public void addInformation(ItemStack stack, @Nullable World worldIn,
                                            List<ITextComponent> tooltip, ITooltipFlag flagIn) {
@@ -355,7 +359,7 @@ public class ModItems {
     public static final RegistryObject<Item> RAWBACONITE = ITEMS.register("rawbaconite",
             () -> new Item(new Item.Properties()
                     .food(new Food.Builder().hunger(3).saturation(0.2f).build())
-                    .isImmuneToFire().group(ModItemGroup.oretopia)){
+                    .group(ModItemGroup.oretopia)){
                 @Override
                 public void addInformation(ItemStack stack, @Nullable World worldIn,
                                            List<ITextComponent> tooltip, ITooltipFlag flagIn) {
@@ -371,7 +375,7 @@ public class ModItems {
     public static final RegistryObject<Item> COOKEDBACONITE = ITEMS.register("cookedbaconite",
             () -> new Item(new Item.Properties()
                     .food(new Food.Builder().hunger(8).saturation(0.5f).build())
-                    .isImmuneToFire().group(ModItemGroup.oretopia)){
+                    .group(ModItemGroup.oretopia)){
                 @Override
                 public void addInformation(ItemStack stack, @Nullable World worldIn,
                                            List<ITextComponent> tooltip, ITooltipFlag flagIn) {
@@ -441,12 +445,42 @@ public class ModItems {
             });
 
     public static final RegistryObject<Item> ENDERSHARD = ITEMS.register("endershard",
-            () -> new Item(new Item.Properties().isImmuneToFire().group(ModItemGroup.oretopia)){
+            () -> new Item(new Item.Properties().group(ModItemGroup.oretopia)){
                 @Override
                 public void addInformation(ItemStack stack, @Nullable World worldIn,
                                            List<ITextComponent> tooltip, ITooltipFlag flagIn) {
                     if(Screen.hasShiftDown())
                         tooltip.add(new TranslationTextComponent(("tooltip.oretopia.endershard")));
+                    else {
+                        tooltip.add(new TranslationTextComponent(("tooltip.oretopia.default")));
+                    }
+
+                }
+            });
+
+    public static final RegistryObject<Item> MUSICDISCSHARD = ITEMS.register("musicdiscshard",
+            () -> new Item(new Item.Properties().group(ModItemGroup.oretopia)){
+                @Override
+                public void addInformation(ItemStack stack, @Nullable World worldIn,
+                                           List<ITextComponent> tooltip, ITooltipFlag flagIn) {
+                    if(Screen.hasShiftDown())
+                        tooltip.add(new TranslationTextComponent(("tooltip.oretopia.musicdiscshard")));
+                    else {
+                        tooltip.add(new TranslationTextComponent(("tooltip.oretopia.default")));
+                    }
+
+                }
+            });
+
+public static final RegistryObject<Item> EDIBLEBRICK = ITEMS.register("ediblebrick",
+            () -> new Item(new Item.Properties()
+                    .food(new Food.Builder().hunger(1).saturation(0f).setAlwaysEdible().effect(() -> new EffectInstance(Effects.INSTANT_DAMAGE, 1, 100), 1f).build())
+                    .isImmuneToFire().group(ModItemGroup.oretopia)){
+                @Override
+                public void addInformation(ItemStack stack, @Nullable World worldIn,
+                                           List<ITextComponent> tooltip, ITooltipFlag flagIn) {
+                    if(Screen.hasShiftDown())
+                        tooltip.add(new TranslationTextComponent(("tooltip.oretopia.ediblebrick")));
                     else {
                         tooltip.add(new TranslationTextComponent(("tooltip.oretopia.default")));
                     }
