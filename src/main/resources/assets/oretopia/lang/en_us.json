@@ -16,6 +16,7 @@
   "block.oretopia.enderiumore": "Enderium Ore",
   "block.oretopia.musicdiscore": "Music Disc Ore",
   "block.oretopia.end_corruptiumore": "§2§kCorruptium§r Ore",
+  "block.oretopia.essenceore": "Essence Ore",
   "tooltip.oretopia.romium": "§1Sa§elu§4t!§r",
   "tooltip.oretopia.romiumore": "§7Now you can have Romania underground!",
   "tooltip.oretopia.romiumnugget": "§7A small piece of romium.",
@@ -65,6 +66,9 @@
   "tooltip.oretopia.musicdiscshard": "§7Oh no, our music disc, its broken!",
   "tooltip.oretopia.end_enderiumore": "§7Hope this isn't an enderman crushed into an end stone block.",
   "tooltip.oretopia.ediblebrick": "§7Mmmmm yummy... (ingestion may cause side effects of severe injury or death).",
+  "tooltip.oretopia.essenceore": "§7Mystical Agriculture in a block.",
+  "tooltip.oretopia.essence": "§7Can be used to make gems into powerful stones, but this needs to be enchanted first...",
+  "tooltip.oretopia.enchantedessence": "§7A gateway to alot of stupidly overpowered items.",
   "tooltip.oretopia.default": "Hold §eSHIFT§r for more info.",
   "tooltip.oretopia.corrupt": "Hold §2§kNOPE§r for more info.",
   "item.oretopia.romium": "Romium",
@@ -99,5 +103,7 @@
   "item.oretopia.corruptium": "§2§kCo§ru§2§kptiu§rm In§2§kgot§r",
   "item.oretopia.corruptiumnugget": "Cor§2§kru§rpti§2§kiu§rm §2§kN§rugget",
   "item.oretopia.ediblebrick": "Edible Brick",
+  "item.oretopia.essence": "Essence",
+  "item.oretopia.enchantedessence": "Enchanted Essence",
   "itemGroup.oretopia": "Oretopia"
 }

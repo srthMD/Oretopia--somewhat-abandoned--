@@ -2,6 +2,7 @@ package ro.srth.oretopia.block;
 
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
+import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
 import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.client.util.ITooltipFlag;
@@ -11,15 +12,14 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.util.text.ITextComponent;
 import net.minecraft.util.text.TranslationTextComponent;
 import net.minecraft.world.IBlockReader;
-import net.minecraft.world.World;
 import net.minecraftforge.common.ToolType;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
-import ro.srth.oretopia.oretopia;
 import ro.srth.oretopia.item.ModItemGroup;
 import ro.srth.oretopia.item.ModItems;
+import ro.srth.oretopia.oretopia;
 
 import javax.annotation.Nullable;
 import java.util.List;
@@ -288,11 +288,38 @@ public class ModBlocks {
                 }
             });
 
+public static final RegistryObject<Block> ESSENCEORE = registerBlock("essenceore",
+            () -> new Block(AbstractBlock.Properties.create(Material.ROCK)
+                    .harvestLevel(2).setRequiresTool().harvestTool(ToolType.PICKAXE).hardnessAndResistance(5.5f)){
+                @Override
+                public void addInformation(ItemStack stack, @Nullable IBlockReader worldIn,
+                                           List<ITextComponent> tooltip, ITooltipFlag flagIn) {
+                    if(Screen.hasShiftDown())
+                        tooltip.add(new TranslationTextComponent(("tooltip.oretopia.essenceore")));
+                    else {
+                        tooltip.add(new TranslationTextComponent(("tooltip.oretopia.default")));
+                    }
 
+                }
+            });
 
+/*
+ public static final RegistryObject<Block> RADIOUMTNT = registerBlock("radioumtnt",
+             () -> new RadioumTNT(AbstractBlock.Properties.create(Material.TNT)
+                     .hardnessAndResistance(0.1f)
+                     .sound(SoundType.PLANT)){
+                 @Override
+                 public void addInformation(ItemStack stack, @Nullable IBlockReader worldIn,
+                                            List<ITextComponent> tooltip, ITooltipFlag flagIn) {
+                     if(Screen.hasShiftDown())
+                         tooltip.add(new TranslationTextComponent(("tooltip.oretopia.radioumtnt")));
+                     else {
+                         tooltip.add(new TranslationTextComponent(("tooltip.oretopia.default")));
+                     }
 
-
-
+                 }
+             });
+*/
 
 
     private static <T extends Block>RegistryObject<T> registerBlock(String name, Supplier<T> block) {

@@ -6,6 +6,7 @@ import net.minecraft.util.registry.Registry;
 import net.minecraft.util.registry.WorldGenRegistries;
 import net.minecraft.world.Dimension;
 import net.minecraft.world.biome.Biome;
+import net.minecraft.world.biome.Biomes;
 import net.minecraft.world.gen.GenerationStage;
 import net.minecraft.world.gen.feature.ConfiguredFeature;
 import net.minecraft.world.gen.feature.Feature;
@@ -37,8 +38,13 @@ public class ModOreGeneration {
         spawnOreInAllBiomes(OreType.TITANIUM, event, Dimension.OVERWORLD.toString());
         spawnOreInAllBiomes(OreType.CORRUPTIUM, event, Dimension.THE_END.toString());
         spawnOreInAllBiomes(OreType.ENDERSHARD, event, Dimension.OVERWORLD.toString());
-        spawnOreInAllBiomes(OreType.MUSICDISCORE, event, Dimension.OVERWORLD.toString());
         spawnOreInAllBiomes(OreType.END_ENDERSHARD, event, Dimension.THE_END.toString());
+        spawnOreInAllBiomes(OreType.MUSICDISC, event, Dimension.OVERWORLD.toString());
+        spawnOreInSpecificBiome(Biomes.DARK_FOREST, OreType.ESSENCE, event, Dimension.OVERWORLD.toString());
+        spawnOreInSpecificBiome(Biomes.DARK_FOREST_HILLS, OreType.ESSENCE, event, Dimension.OVERWORLD.toString());
+        spawnOreInSpecificBiome(Biomes.BIRCH_FOREST, OreType.ESSENCE, event, Dimension.OVERWORLD.toString());
+        spawnOreInSpecificBiome(Biomes.BIRCH_FOREST, OreType.ESSENCE, event, Dimension.OVERWORLD.toString());
+
     }
 
 

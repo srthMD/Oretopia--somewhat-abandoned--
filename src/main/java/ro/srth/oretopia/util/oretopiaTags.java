@@ -67,6 +67,9 @@ public class oretopiaTags {
         public static final Tags.IOptionalNamedTag<Item> COOKEDBACONITE = createForgeTag("ingots/cookedbaconite");
         public static final Tags.IOptionalNamedTag<Item> MUSICDISCORE = createForgeTag("ores/musicdisc");
         public static final Tags.IOptionalNamedTag<Item> MUSICDISCSHARD = createForgeTag("shards/musicdisc");
+        public static final Tags.IOptionalNamedTag<Item> ESSENCEORE = createForgeTag("ores/essence");
+        public static final Tags.IOptionalNamedTag<Item> ESSENCE = createForgeTag("essence/essence");
+        public static final Tags.IOptionalNamedTag<Item> ENCHANTEDESSENCE = createForgeTag("essence/enchantedessence");
 
         private static Tags.IOptionalNamedTag<Item> createTag(String name) {
             return ItemTags.createOptional(new ResourceLocation(oretopia.MOD_ID, name));
