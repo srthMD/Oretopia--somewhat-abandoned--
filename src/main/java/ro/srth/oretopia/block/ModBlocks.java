@@ -107,6 +107,21 @@ public class ModBlocks {
                 }
             });
 
+ public static final RegistryObject<Block> RUBYBLOCK = registerBlock("rubyblock",
+            () -> new Block(AbstractBlock.Properties.create(Material.IRON)
+                    .harvestLevel(3).setRequiresTool().harvestTool(ToolType.PICKAXE).hardnessAndResistance(9f)){
+                @Override
+                public void addInformation(ItemStack stack, @Nullable IBlockReader worldIn,
+                                           List<ITextComponent> tooltip, ITooltipFlag flagIn) {
+                    if(Screen.hasShiftDown())
+                        tooltip.add(new TranslationTextComponent(("tooltip.oretopia.rubyblock")));
+                    else {
+                        tooltip.add(new TranslationTextComponent(("tooltip.oretopia.default")));
+                    }
+
+                }
+            });
+
     public static final RegistryObject<Block> ORETOPIUMORE = registerBlock("oretopiumore",
             () -> new Block(AbstractBlock.Properties.create(Material.ROCK)
                     .harvestLevel(4).setRequiresTool().harvestTool(ToolType.PICKAXE).hardnessAndResistance(9f)){
