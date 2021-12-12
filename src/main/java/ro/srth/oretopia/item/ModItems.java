@@ -54,7 +54,7 @@ public class ModItems {
             });
 
     public static final RegistryObject<Item> ROMIUMSWORD = ITEMS.register("romiumsword",
-            () -> new SwordItem(ModItemTier.ROMIUM, 3, .5f,
+            () -> new SwordItem(ModItemTier.ROMIUM, 3, -2.4f,
                     new Item.Properties().group(ModItemGroup.oretopia)){
                 @Override
                 public void addInformation(ItemStack stack, @Nullable World worldIn,
@@ -69,7 +69,7 @@ public class ModItems {
             });
 
     public static final RegistryObject<Item> ROMIUMPICKAXE = ITEMS.register("romiumpickaxe",
-            () -> new PickaxeItem(ModItemTier.ROMIUM, -1, -1f,
+            () -> new PickaxeItem(ModItemTier.ROMIUM, -1, -2.6f,
                     new Item.Properties().group(ModItemGroup.oretopia)){
                 @Override
                 public void addInformation(ItemStack stack, @Nullable World worldIn,
@@ -99,7 +99,7 @@ public class ModItems {
             });
 
     public static final RegistryObject<Item> ROMIUMSHOVEL = ITEMS.register("romiumshovel",
-            () -> new ShovelItem(ModItemTier.ROMIUM, -1, -1f,
+            () -> new ShovelItem(ModItemTier.ROMIUM, -1, -2.6f,
                     new Item.Properties().group(ModItemGroup.oretopia)){
                 @Override
                 public void addInformation(ItemStack stack, @Nullable World worldIn,
@@ -114,7 +114,7 @@ public class ModItems {
             });
 
     public static final RegistryObject<Item> ROMIUMHOE = ITEMS.register("romiumhoe",
-            () -> new HoeItem(ModItemTier.ROMIUM, -1, -1f,
+            () -> new HoeItem(ModItemTier.ROMIUM, -1, -2.6f,
                     new Item.Properties().group(ModItemGroup.oretopia)){
                 @Override
                 public void addInformation(ItemStack stack, @Nullable World worldIn,
@@ -191,6 +191,77 @@ public class ModItems {
                                            List<ITextComponent> tooltip, ITooltipFlag flagIn) {
                     if(Screen.hasShiftDown())
                         tooltip.add(new TranslationTextComponent(("tooltip.oretopia.coppernugget")));
+                    else {
+                        tooltip.add(new TranslationTextComponent(("tooltip.oretopia.default")));
+                    }
+
+                }
+            });
+
+    public static final RegistryObject<Item> COPPERSWORD = ITEMS.register("coppersword",
+            () -> new SwordItem(ModItemTier.COPPER, 2, -2.4f,
+                    new Item.Properties().group(ModItemGroup.oretopia)){
+                @Override
+                public void addInformation(ItemStack stack, @Nullable World worldIn,
+                                           List<ITextComponent> tooltip, ITooltipFlag flagIn) {
+                    if(Screen.hasShiftDown())
+                        tooltip.add(new TranslationTextComponent(("tooltip.oretopia.coppersword")));
+                    else {
+                        tooltip.add(new TranslationTextComponent(("tooltip.oretopia.default")));
+                    }
+
+                }
+            });
+    public static final RegistryObject<Item> COPPERPICKAXE = ITEMS.register("copperpickaxe",
+            () -> new PickaxeItem(ModItemTier.COPPER, 1, -2.8f,
+                    new Item.Properties().group(ModItemGroup.oretopia)){
+                @Override
+                public void addInformation(ItemStack stack, @Nullable World worldIn,
+                                           List<ITextComponent> tooltip, ITooltipFlag flagIn) {
+                    if(Screen.hasShiftDown())
+                        tooltip.add(new TranslationTextComponent(("tooltip.oretopia.copperpickaxe")));
+                    else {
+                        tooltip.add(new TranslationTextComponent(("tooltip.oretopia.default")));
+                    }
+
+                }
+            });
+    public static final RegistryObject<Item> COPPERAXE = ITEMS.register("copperaxe",
+            () -> new AxeItem(ModItemTier.COPPER, 3, -3f,
+                    new Item.Properties().group(ModItemGroup.oretopia)){
+                @Override
+                public void addInformation(ItemStack stack, @Nullable World worldIn,
+                                           List<ITextComponent> tooltip, ITooltipFlag flagIn) {
+                    if(Screen.hasShiftDown())
+                        tooltip.add(new TranslationTextComponent(("tooltip.oretopia.copperaxe")));
+                    else {
+                        tooltip.add(new TranslationTextComponent(("tooltip.oretopia.default")));
+                    }
+
+                }
+            });
+    public static final RegistryObject<Item> COPPERSHOVEL = ITEMS.register("coppershovel",
+            () -> new ShovelItem(ModItemTier.COPPER, 1, -2.8f,
+                    new Item.Properties().group(ModItemGroup.oretopia)){
+                @Override
+                public void addInformation(ItemStack stack, @Nullable World worldIn,
+                                           List<ITextComponent> tooltip, ITooltipFlag flagIn) {
+                    if(Screen.hasShiftDown())
+                        tooltip.add(new TranslationTextComponent(("tooltip.oretopia.coppershovel")));
+                    else {
+                        tooltip.add(new TranslationTextComponent(("tooltip.oretopia.default")));
+                    }
+
+                }
+            });
+    public static final RegistryObject<Item> COPPERHOE = ITEMS.register("copperhoe",
+            () -> new HoeItem(ModItemTier.COPPER, 1, -2.8f,
+                    new Item.Properties().group(ModItemGroup.oretopia)){
+                @Override
+                public void addInformation(ItemStack stack, @Nullable World worldIn,
+                                           List<ITextComponent> tooltip, ITooltipFlag flagIn) {
+                    if(Screen.hasShiftDown())
+                        tooltip.add(new TranslationTextComponent(("tooltip.oretopia.copperhoe")));
                     else {
                         tooltip.add(new TranslationTextComponent(("tooltip.oretopia.default")));
                     }
