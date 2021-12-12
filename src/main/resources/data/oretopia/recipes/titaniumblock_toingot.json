@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "oretopia:blockoftitanium"
+    }
+  ],
+  "result": {
+    "item": "oretopia:titanium",
+    "count": 9
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "oretopia:blockofcopper"
+    }
+  ],
+  "result": {
+    "item": "oretopia:copper",
+    "count": 9
+  }
+}

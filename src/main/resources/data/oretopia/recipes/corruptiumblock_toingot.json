@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "oretopia:blockofcorruptium"
+    }
+  ],
+  "result": {
+    "item": "oretopia:corruptium",
+    "count": 9
+  }
+}

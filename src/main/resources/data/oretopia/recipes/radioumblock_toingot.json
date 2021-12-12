@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "oretopia:blockofradioum"
+    }
+  ],
+  "result": {
+    "item": "oretopia:radioum",
+    "count": 9
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "oretopia:blockofromium"
+    }
+  ],
+  "result": {
+    "item": "oretopia:romium",
+    "count": 9
+  }
+}

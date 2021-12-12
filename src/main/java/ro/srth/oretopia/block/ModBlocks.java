@@ -47,6 +47,22 @@ public class ModBlocks {
                 }
             });
 
+public static final RegistryObject<Block> BLOCKOFROMIUM = registerBlock("blockofromium",
+            () -> new Block(AbstractBlock.Properties.create(Material.IRON)
+                    .harvestLevel(2).setRequiresTool().harvestTool(ToolType.PICKAXE).hardnessAndResistance(5.5f)
+                    .sound(SoundType.METAL)){
+                @Override
+                public void addInformation(ItemStack stack, @Nullable IBlockReader worldIn,
+                                           List<ITextComponent> tooltip, ITooltipFlag flagIn) {
+                    if(Screen.hasShiftDown())
+                        tooltip.add(new TranslationTextComponent(("tooltip.oretopia.blockofromium")));
+                    else {
+                        tooltip.add(new TranslationTextComponent(("tooltip.oretopia.default")));
+                    }
+
+                }
+            });
+
     public static final RegistryObject<Block> URANIUMORE = registerBlock("uraniumore",
             () -> new Block(AbstractBlock.Properties.create(Material.ROCK)
                     .harvestLevel(2).setRequiresTool().harvestTool(ToolType.PICKAXE).hardnessAndResistance(4f)){
@@ -77,6 +93,22 @@ public class ModBlocks {
                 }
             });
 
+public static final RegistryObject<Block> BLOCKOFCOPPER = registerBlock("blockofcopper",
+            () -> new Block(AbstractBlock.Properties.create(Material.IRON)
+                    .harvestLevel(1).setRequiresTool().harvestTool(ToolType.PICKAXE).hardnessAndResistance(2.5f)
+                    .sound(SoundType.METAL)){
+                @Override
+                public void addInformation(ItemStack stack, @Nullable IBlockReader worldIn,
+                                           List<ITextComponent> tooltip, ITooltipFlag flagIn) {
+                    if(Screen.hasShiftDown())
+                        tooltip.add(new TranslationTextComponent(("tooltip.oretopia.blockofcopper")));
+                    else {
+                        tooltip.add(new TranslationTextComponent(("tooltip.oretopia.default")));
+                    }
+
+                }
+            });
+
     public static final RegistryObject<Block> TUNGSTENORE = registerBlock("tungstenore",
             () -> new Block(AbstractBlock.Properties.create(Material.ROCK)
                     .harvestLevel(4).setRequiresTool().harvestTool(ToolType.PICKAXE).hardnessAndResistance(8.5f)){
@@ -85,6 +117,22 @@ public class ModBlocks {
                                            List<ITextComponent> tooltip, ITooltipFlag flagIn) {
                     if(Screen.hasShiftDown())
                         tooltip.add(new TranslationTextComponent(("tooltip.oretopia.tungstenore")));
+                    else {
+                        tooltip.add(new TranslationTextComponent(("tooltip.oretopia.default")));
+                    }
+
+                }
+            });
+
+public static final RegistryObject<Block> BLOCKOFTUNGSTEN = registerBlock("blockoftungsten",
+            () -> new Block(AbstractBlock.Properties.create(Material.IRON)
+                    .harvestLevel(4).setRequiresTool().harvestTool(ToolType.PICKAXE).hardnessAndResistance(9f)
+                    .sound(SoundType.METAL)){
+                @Override
+                public void addInformation(ItemStack stack, @Nullable IBlockReader worldIn,
+                                           List<ITextComponent> tooltip, ITooltipFlag flagIn) {
+                    if(Screen.hasShiftDown())
+                        tooltip.add(new TranslationTextComponent(("tooltip.oretopia.blockoftungsten")));
                     else {
                         tooltip.add(new TranslationTextComponent(("tooltip.oretopia.default")));
                     }
@@ -109,7 +157,8 @@ public class ModBlocks {
 
  public static final RegistryObject<Block> RUBYBLOCK = registerBlock("rubyblock",
             () -> new Block(AbstractBlock.Properties.create(Material.IRON)
-                    .harvestLevel(3).setRequiresTool().harvestTool(ToolType.PICKAXE).hardnessAndResistance(9f)){
+                    .harvestLevel(3).setRequiresTool().harvestTool(ToolType.PICKAXE).hardnessAndResistance(9f)
+                    .sound(SoundType.METAL)){
                 @Override
                 public void addInformation(ItemStack stack, @Nullable IBlockReader worldIn,
                                            List<ITextComponent> tooltip, ITooltipFlag flagIn) {
@@ -137,6 +186,22 @@ public class ModBlocks {
                 }
             });
 
+public static final RegistryObject<Block> BLOCKOFORETOPIUM = registerBlock("blockoforetopium",
+            () -> new Block(AbstractBlock.Properties.create(Material.IRON)
+                    .harvestLevel(4).setRequiresTool().harvestTool(ToolType.PICKAXE).hardnessAndResistance(9.5f)
+                    .sound(SoundType.METAL)){
+                @Override
+                public void addInformation(ItemStack stack, @Nullable IBlockReader worldIn,
+                                           List<ITextComponent> tooltip, ITooltipFlag flagIn) {
+                    if(Screen.hasShiftDown())
+                        tooltip.add(new TranslationTextComponent(("tooltip.oretopia.blockoforetopium")));
+                    else {
+                        tooltip.add(new TranslationTextComponent(("tooltip.oretopia.default")));
+                    }
+
+                }
+            });
+
 
     public static final RegistryObject<Block> CHROMIUMORE = registerBlock("chromiumore",
             () -> new Block(AbstractBlock.Properties.create(Material.ROCK)
@@ -153,6 +218,22 @@ public class ModBlocks {
                 }
             });
 
+public static final RegistryObject<Block> BLOCKOFCHROMIUM = registerBlock("blockofchromium",
+            () -> new Block(AbstractBlock.Properties.create(Material.IRON)
+                    .harvestLevel(3).setRequiresTool().harvestTool(ToolType.PICKAXE).hardnessAndResistance(7.5f)
+                    .sound(SoundType.METAL)){
+                @Override
+                public void addInformation(ItemStack stack, @Nullable IBlockReader worldIn,
+                                           List<ITextComponent> tooltip, ITooltipFlag flagIn) {
+                    if(Screen.hasShiftDown())
+                        tooltip.add(new TranslationTextComponent(("tooltip.oretopia.blockofchromium")));
+                    else {
+                        tooltip.add(new TranslationTextComponent(("tooltip.oretopia.default")));
+                    }
+
+                }
+            });
+
     public static final RegistryObject<Block> COBALTORE = registerBlock("cobaltore",
             () -> new Block(AbstractBlock.Properties.create(Material.ROCK)
                     .harvestLevel(2).setRequiresTool().harvestTool(ToolType.PICKAXE).hardnessAndResistance(5f)){
@@ -161,6 +242,22 @@ public class ModBlocks {
                                            List<ITextComponent> tooltip, ITooltipFlag flagIn) {
                     if(Screen.hasShiftDown())
                         tooltip.add(new TranslationTextComponent(("tooltip.oretopia.cobaltore")));
+                    else {
+                        tooltip.add(new TranslationTextComponent(("tooltip.oretopia.default")));
+                    }
+
+                }
+            });
+
+ public static final RegistryObject<Block> BLOCKOFCOBALT = registerBlock("blockofcobalt",
+            () -> new Block(AbstractBlock.Properties.create(Material.IRON)
+                    .harvestLevel(2).setRequiresTool().harvestTool(ToolType.PICKAXE).hardnessAndResistance(5.5f)
+                    .sound(SoundType.METAL)){
+                @Override
+                public void addInformation(ItemStack stack, @Nullable IBlockReader worldIn,
+                                           List<ITextComponent> tooltip, ITooltipFlag flagIn) {
+                    if(Screen.hasShiftDown())
+                        tooltip.add(new TranslationTextComponent(("tooltip.oretopia.blockofcobalt")));
                     else {
                         tooltip.add(new TranslationTextComponent(("tooltip.oretopia.default")));
                     }
@@ -198,6 +295,23 @@ public class ModBlocks {
                 }
             });
 
+    public static final RegistryObject<Block> BLOCKOFRADIOUM = registerBlock("blockofradioum",
+            () -> new Block(AbstractBlock.Properties.create(Material.IRON)
+                    .harvestLevel(3).setRequiresTool().harvestTool(ToolType.PICKAXE).hardnessAndResistance(8f)
+                    .sound(SoundType.METAL)){
+                @Override
+                public void addInformation(ItemStack stack, @Nullable IBlockReader worldIn,
+                                           List<ITextComponent> tooltip, ITooltipFlag flagIn) {
+                    if(Screen.hasShiftDown())
+                        tooltip.add(new TranslationTextComponent(("tooltip.oretopia.blockofradioum")));
+                    else {
+                        tooltip.add(new TranslationTextComponent(("tooltip.oretopia.default")));
+                    }
+
+                }
+            });
+
+
     public static final RegistryObject<Block> BACONITEORE = registerBlock("baconiteore",
             () -> new Block(AbstractBlock.Properties.create(Material.ROCK)
                     .harvestLevel(2).setRequiresTool().harvestTool(ToolType.PICKAXE).hardnessAndResistance(4.5f)){
@@ -228,6 +342,22 @@ public class ModBlocks {
                 }
             });
 
+    public static final RegistryObject<Block> BLOCKOFTITANIUM = registerBlock("blockoftitanium",
+            () -> new Block(AbstractBlock.Properties.create(Material.IRON)
+                    .harvestLevel(3).setRequiresTool().harvestTool(ToolType.PICKAXE).hardnessAndResistance(7.5f)
+                    .sound(SoundType.METAL)){
+                @Override
+                public void addInformation(ItemStack stack, @Nullable IBlockReader worldIn,
+                                           List<ITextComponent> tooltip, ITooltipFlag flagIn) {
+                    if(Screen.hasShiftDown())
+                        tooltip.add(new TranslationTextComponent(("tooltip.oretopia.blockoftitanium")));
+                    else {
+                        tooltip.add(new TranslationTextComponent(("tooltip.oretopia.default")));
+                    }
+
+                }
+            });
+
     public static final RegistryObject<Block> END_CORRUPTIUMORE = registerBlock("end_corruptiumore",
             () -> new Block(AbstractBlock.Properties.create(Material.ROCK)
                     .harvestLevel(4).setRequiresTool().harvestTool(ToolType.PICKAXE).hardnessAndResistance(30f)){
@@ -236,6 +366,22 @@ public class ModBlocks {
                                            List<ITextComponent> tooltip, ITooltipFlag flagIn) {
                     if(Screen.hasAltDown())
                         tooltip.add(new TranslationTextComponent(("tooltip.oretopia.end_corruptiumore")));
+                    else {
+                        tooltip.add(new TranslationTextComponent(("tooltip.oretopia.corrupt")));
+                    }
+
+                }
+            });
+
+public static final RegistryObject<Block> BLOCKOFCORRUPTIUM = registerBlock("blockofcorruptium",
+            () -> new Block(AbstractBlock.Properties.create(Material.IRON)
+                    .harvestLevel(4).setRequiresTool().harvestTool(ToolType.PICKAXE).hardnessAndResistance(32f)
+                    .sound(SoundType.METAL)){
+                @Override
+                public void addInformation(ItemStack stack, @Nullable IBlockReader worldIn,
+                                           List<ITextComponent> tooltip, ITooltipFlag flagIn) {
+                    if(Screen.hasAltDown())
+                        tooltip.add(new TranslationTextComponent(("tooltip.oretopia.blockofcorruptium")));
                     else {
                         tooltip.add(new TranslationTextComponent(("tooltip.oretopia.corrupt")));
                     }
@@ -304,6 +450,9 @@ public static final RegistryObject<Block> ESSENCEORE = registerBlock("essenceore
             });
 
 /*
+
+FOR LATER IMPLEMTATION
+
  public static final RegistryObject<Block> RADIOUMTNT = registerBlock("radioumtnt",
              () -> new RadioumTNT(AbstractBlock.Properties.create(Material.TNT)
                      .hardnessAndResistance(0.1f)

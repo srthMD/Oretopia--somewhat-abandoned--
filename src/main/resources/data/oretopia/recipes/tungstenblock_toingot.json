@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "oretopia:blockoftungsten"
+    }
+  ],
+  "result": {
+    "item": "oretopia:tungsten",
+    "count": 9
+  }
+}

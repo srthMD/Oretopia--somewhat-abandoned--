@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "oretopia:blockofcobalt"
+    }
+  ],
+  "result": {
+    "item": "oretopia:cobalt",
+    "count": 9
+  }
+}
