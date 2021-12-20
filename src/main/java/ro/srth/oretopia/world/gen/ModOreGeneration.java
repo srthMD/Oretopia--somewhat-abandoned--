@@ -62,8 +62,11 @@ public class ModOreGeneration {
         return new OreFeatureConfig(new BlockMatchRuleTest(Blocks.END_STONE),
                 ore.getBlock().get().getDefaultState(), ore.getMaxVeinSize());
     }
+    private static OreFeatureConfig getOretopiaFeatureConfig(OreType ore) {
+        return new OreFeatureConfig(new BlockMatchRuleTest(Blocks.STONE),
+                ore.getBlock().get().getDefaultState(), ore.getMaxVeinSize());
+    }
 
-    // Currently only supports vanilla Dimensions
     private static ConfiguredFeature<?, ?> makeOreFeature(OreType ore, String dimensionToSpawnIn) {
         OreFeatureConfig oreFeatureConfig = null;
 
@@ -73,6 +76,8 @@ public class ModOreGeneration {
             oreFeatureConfig = getNetherFeatureConfig(ore);
         } else if(dimensionToSpawnIn.equals(Dimension.THE_END.toString())) {
             oreFeatureConfig = getEndFeatureConfig(ore);
+       /* } else if(dimensionToSpawnIn.equals(Dimension.ORETOPIA.toString())) {
+            oreFeatureConfig = getEndFeatureConfig(ore); */
         }
 
         ConfiguredPlacement<TopSolidRangeConfig> configuredPlacement = Placement.RANGE.configure(
