@@ -2,6 +2,11 @@ package ro.srth.oretopia;
 /* whatcha lookin for huh? are you a dirty little modder huh???? ya think you can get away with modding a mod huh?????? */
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
+import net.minecraft.item.ItemGroup;
+import net.minecraft.item.ItemStack;
+import net.minecraft.util.IItemProvider;
+import net.minecraftforge.api.distmarker.Dist;
+import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -26,7 +31,19 @@ import java.util.stream.Collectors;
 @Mod(oretopia.MOD_ID)
 public class oretopia
 {
+    public static final ItemGroup ORETOPIAITEMGROUP = new ItemGroup("Oretopia") {
+        @Override
+        public ItemStack createIcon() {
+            return null;
+        }
+
+        @OnlyIn(Dist.CLIENT)
+        public ItemStack func_78016_d() {
+            return new ItemStack((IItemProvider)ModItems.ENCHANTEDESSENCE.get());
+        }
+    };
     public static final String MOD_ID = "oretopia";
+
 
     // Directly reference a log4j logger.
     private static final Logger LOGGER = LogManager.getLogger();
@@ -79,7 +96,7 @@ public class oretopia
     @SubscribeEvent
     public void onServerStarting(FMLServerStartingEvent event) {
         // do something when the server starts
-        LOGGER.info("HELLO from server starting");
+        LOGGER.info("");
     }
 
     // You can use EventBusSubscriber to automatically subscribe events on the contained class (this is subscribing to the MOD
@@ -89,7 +106,7 @@ public class oretopia
         @SubscribeEvent
         public static void onBlocksRegistry(final RegistryEvent.Register<Block> blockRegistryEvent) {
             // register a new block here
-            LOGGER.info("HELLO from Register Block");
+            LOGGER.info("");
         }
     }
 }

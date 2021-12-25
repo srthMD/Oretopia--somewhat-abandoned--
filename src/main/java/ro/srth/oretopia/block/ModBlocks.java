@@ -13,11 +13,11 @@ import net.minecraft.util.text.ITextComponent;
 import net.minecraft.util.text.TranslationTextComponent;
 import net.minecraft.world.IBlockReader;
 import net.minecraftforge.common.ToolType;
+import net.minecraftforge.energy.EnergyStorage;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
-import ro.srth.oretopia.item.ModItemGroup;
 import ro.srth.oretopia.item.ModItems;
 import ro.srth.oretopia.oretopia;
 
@@ -481,12 +481,11 @@ FOR LATER IMPLEMTATION
 
     private static <T extends Block> void registerBlockItem(String name, RegistryObject<T> block) {
         ModItems.ITEMS.register(name, () -> new BlockItem(block.get(),
-        new Item.Properties().group(ModItemGroup.oretopia)));
+        new Item.Properties().group(oretopia.ORETOPIAITEMGROUP)));
     }
 
     public static void register(IEventBus eventBus) {
         BLOCKS.register(eventBus);
     }
-
 
 }

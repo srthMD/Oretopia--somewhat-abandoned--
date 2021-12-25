@@ -26,7 +26,7 @@ public class ModItems {
 
 
     public static final RegistryObject<Item> ROMIUM = ITEMS.register("romium",
-            () -> new Item(new Item.Properties().group(ModItemGroup.oretopia)){
+            () -> new Item(new Item.Properties().group(oretopia.ORETOPIAITEMGROUP)){
     @Override
     public void addInformation(ItemStack stack, @Nullable World worldIn,
                                List<ITextComponent> tooltip, ITooltipFlag flagIn) {
@@ -40,7 +40,7 @@ public class ModItems {
 });
 
     public static final RegistryObject<Item> ROMIUMNUGGET = ITEMS.register("romiumnugget",
-            () -> new Item(new Item.Properties().group(ModItemGroup.oretopia)){
+            () -> new Item(new Item.Properties().group(oretopia.ORETOPIAITEMGROUP)){
                 @Override
                 public void addInformation(ItemStack stack, @Nullable World worldIn,
                                            List<ITextComponent> tooltip, ITooltipFlag flagIn) {
@@ -55,7 +55,7 @@ public class ModItems {
 
     public static final RegistryObject<Item> ROMIUMSWORD = ITEMS.register("romiumsword",
             () -> new SwordItem(ModItemTier.ROMIUM, 3, -2.4f,
-                    new Item.Properties().group(ModItemGroup.oretopia)){
+                    new Item.Properties().group(oretopia.ORETOPIAITEMGROUP)){
                 @Override
                 public void addInformation(ItemStack stack, @Nullable World worldIn,
                                            List<ITextComponent> tooltip, ITooltipFlag flagIn) {
@@ -70,7 +70,7 @@ public class ModItems {
 
     public static final RegistryObject<Item> ROMIUMPICKAXE = ITEMS.register("romiumpickaxe",
             () -> new PickaxeItem(ModItemTier.ROMIUM, -1, -2.6f,
-                    new Item.Properties().group(ModItemGroup.oretopia)){
+                    new Item.Properties().group(oretopia.ORETOPIAITEMGROUP)){
                 @Override
                 public void addInformation(ItemStack stack, @Nullable World worldIn,
                                            List<ITextComponent> tooltip, ITooltipFlag flagIn) {
@@ -85,7 +85,7 @@ public class ModItems {
 
     public static final RegistryObject<Item> ROMIUMAXE = ITEMS.register("romiumaxe",
             () -> new AxeItem(ModItemTier.ROMIUM, 5, -3f,
-                    new Item.Properties().group(ModItemGroup.oretopia)){
+                    new Item.Properties().group(oretopia.ORETOPIAITEMGROUP)){
                 @Override
                 public void addInformation(ItemStack stack, @Nullable World worldIn,
                                            List<ITextComponent> tooltip, ITooltipFlag flagIn) {
@@ -100,7 +100,7 @@ public class ModItems {
 
     public static final RegistryObject<Item> ROMIUMSHOVEL = ITEMS.register("romiumshovel",
             () -> new ShovelItem(ModItemTier.ROMIUM, -1, -2.6f,
-                    new Item.Properties().group(ModItemGroup.oretopia)){
+                    new Item.Properties().group(oretopia.ORETOPIAITEMGROUP)){
                 @Override
                 public void addInformation(ItemStack stack, @Nullable World worldIn,
                                            List<ITextComponent> tooltip, ITooltipFlag flagIn) {
@@ -115,7 +115,7 @@ public class ModItems {
 
     public static final RegistryObject<Item> ROMIUMHOE = ITEMS.register("romiumhoe",
             () -> new HoeItem(ModItemTier.ROMIUM, -1, -2.6f,
-                    new Item.Properties().group(ModItemGroup.oretopia)){
+                    new Item.Properties().group(oretopia.ORETOPIAITEMGROUP)){
                 @Override
                 public void addInformation(ItemStack stack, @Nullable World worldIn,
                                            List<ITextComponent> tooltip, ITooltipFlag flagIn) {
@@ -129,7 +129,7 @@ public class ModItems {
             });
 
     public static final RegistryObject<Item> RAWURANIUM = ITEMS.register("rawuranium",
-            () -> new Item(new Item.Properties().group(ModItemGroup.oretopia)){
+            () -> new Item(new Item.Properties().group(oretopia.ORETOPIAITEMGROUP)){
                 @Override
                 public void addInformation(ItemStack stack, @Nullable World worldIn,
                                            List<ITextComponent> tooltip, ITooltipFlag flagIn) {
@@ -143,7 +143,7 @@ public class ModItems {
             });
 
     public static final RegistryObject<Item> URANIUM = ITEMS.register("uranium",
-            () -> new Item(new Item.Properties().group(ModItemGroup.oretopia)){
+            () -> new Item(new Item.Properties().group(oretopia.ORETOPIAITEMGROUP)){
                 @Override
                 public void addInformation(ItemStack stack, @Nullable World worldIn,
                                            List<ITextComponent> tooltip, ITooltipFlag flagIn) {
@@ -157,7 +157,7 @@ public class ModItems {
             });
 
     public static final RegistryObject<Item> ENRICHEDURANIUM = ITEMS.register("enricheduranium",
-            () -> new Item(new Item.Properties().group(ModItemGroup.oretopia)){
+            () -> new Item(new Item.Properties().group(oretopia.ORETOPIAITEMGROUP)){
                 @Override
                 public void addInformation(ItemStack stack, @Nullable World worldIn,
                                            List<ITextComponent> tooltip, ITooltipFlag flagIn) {
@@ -171,7 +171,7 @@ public class ModItems {
             });
 
     public static final RegistryObject<Item> COPPER = ITEMS.register("copper",
-            () -> new Item(new Item.Properties().group(ModItemGroup.oretopia)){
+            () -> new Item(new Item.Properties().group(oretopia.ORETOPIAITEMGROUP)){
                 @Override
                 public void addInformation(ItemStack stack, @Nullable World worldIn,
                                            List<ITextComponent> tooltip, ITooltipFlag flagIn) {
@@ -185,7 +185,7 @@ public class ModItems {
             });
 
     public static final RegistryObject<Item> COPPERNUGGET = ITEMS.register("coppernugget",
-            () -> new Item(new Item.Properties().group(ModItemGroup.oretopia)){
+            () -> new Item(new Item.Properties().group(oretopia.ORETOPIAITEMGROUP)){
                 @Override
                 public void addInformation(ItemStack stack, @Nullable World worldIn,
                                            List<ITextComponent> tooltip, ITooltipFlag flagIn) {
@@ -200,7 +200,7 @@ public class ModItems {
 
     public static final RegistryObject<Item> COPPERSWORD = ITEMS.register("coppersword",
             () -> new SwordItem(ModItemTier.COPPER, 2, -2.4f,
-                    new Item.Properties().group(ModItemGroup.oretopia)){
+                    new Item.Properties().group(oretopia.ORETOPIAITEMGROUP)){
                 @Override
                 public void addInformation(ItemStack stack, @Nullable World worldIn,
                                            List<ITextComponent> tooltip, ITooltipFlag flagIn) {
@@ -214,7 +214,7 @@ public class ModItems {
             });
     public static final RegistryObject<Item> COPPERPICKAXE = ITEMS.register("copperpickaxe",
             () -> new PickaxeItem(ModItemTier.COPPER, 1, -2.8f,
-                    new Item.Properties().group(ModItemGroup.oretopia)){
+                    new Item.Properties().group(oretopia.ORETOPIAITEMGROUP)){
                 @Override
                 public void addInformation(ItemStack stack, @Nullable World worldIn,
                                            List<ITextComponent> tooltip, ITooltipFlag flagIn) {
@@ -228,7 +228,7 @@ public class ModItems {
             });
     public static final RegistryObject<Item> COPPERAXE = ITEMS.register("copperaxe",
             () -> new AxeItem(ModItemTier.COPPER, 3, -3f,
-                    new Item.Properties().group(ModItemGroup.oretopia)){
+                    new Item.Properties().group(oretopia.ORETOPIAITEMGROUP)){
                 @Override
                 public void addInformation(ItemStack stack, @Nullable World worldIn,
                                            List<ITextComponent> tooltip, ITooltipFlag flagIn) {
@@ -242,7 +242,7 @@ public class ModItems {
             });
     public static final RegistryObject<Item> COPPERSHOVEL = ITEMS.register("coppershovel",
             () -> new ShovelItem(ModItemTier.COPPER, 1, -2.8f,
-                    new Item.Properties().group(ModItemGroup.oretopia)){
+                    new Item.Properties().group(oretopia.ORETOPIAITEMGROUP)){
                 @Override
                 public void addInformation(ItemStack stack, @Nullable World worldIn,
                                            List<ITextComponent> tooltip, ITooltipFlag flagIn) {
@@ -256,7 +256,7 @@ public class ModItems {
             });
     public static final RegistryObject<Item> COPPERHOE = ITEMS.register("copperhoe",
             () -> new HoeItem(ModItemTier.COPPER, 1, -2.8f,
-                    new Item.Properties().group(ModItemGroup.oretopia)){
+                    new Item.Properties().group(oretopia.ORETOPIAITEMGROUP)){
                 @Override
                 public void addInformation(ItemStack stack, @Nullable World worldIn,
                                            List<ITextComponent> tooltip, ITooltipFlag flagIn) {
@@ -270,7 +270,7 @@ public class ModItems {
             });
 
     public static final RegistryObject<Item> TUNGSTEN = ITEMS.register("tungsten",
-            () -> new Item(new Item.Properties().isImmuneToFire().group(ModItemGroup.oretopia)){
+            () -> new Item(new Item.Properties().isImmuneToFire().group(oretopia.ORETOPIAITEMGROUP)){
                 @Override
                 public void addInformation(ItemStack stack, @Nullable World worldIn,
                                            List<ITextComponent> tooltip, ITooltipFlag flagIn) {
@@ -284,7 +284,7 @@ public class ModItems {
             });
 
     public static final RegistryObject<Item> TUNGSTENNUGGET = ITEMS.register("tungstennugget",
-            () -> new Item(new Item.Properties().isImmuneToFire().group(ModItemGroup.oretopia)){
+            () -> new Item(new Item.Properties().isImmuneToFire().group(oretopia.ORETOPIAITEMGROUP)){
                 @Override
                 public void addInformation(ItemStack stack, @Nullable World worldIn,
                                            List<ITextComponent> tooltip, ITooltipFlag flagIn) {
@@ -300,7 +300,7 @@ public class ModItems {
     /* other ores */
 
     public static final RegistryObject<Item> RUBY = ITEMS.register("ruby",
-            () -> new Item(new Item.Properties().isImmuneToFire().group(ModItemGroup.oretopia)){
+            () -> new Item(new Item.Properties().isImmuneToFire().group(oretopia.ORETOPIAITEMGROUP)){
                 @Override
                 public void addInformation(ItemStack stack, @Nullable World worldIn,
                                            List<ITextComponent> tooltip, ITooltipFlag flagIn) {
@@ -315,7 +315,7 @@ public class ModItems {
 
 
     public static final RegistryObject<Item> CHROMIUM = ITEMS.register("chromium",
-            () -> new Item(new Item.Properties().isImmuneToFire().group(ModItemGroup.oretopia)){
+            () -> new Item(new Item.Properties().isImmuneToFire().group(oretopia.ORETOPIAITEMGROUP)){
                 @Override
                 public void addInformation(ItemStack stack, @Nullable World worldIn,
                                            List<ITextComponent> tooltip, ITooltipFlag flagIn) {
@@ -329,7 +329,7 @@ public class ModItems {
             });
 
     public static final RegistryObject<Item> CHROMIUMNUGGET = ITEMS.register("chromiumnugget",
-            () -> new Item(new Item.Properties().isImmuneToFire().group(ModItemGroup.oretopia)){
+            () -> new Item(new Item.Properties().isImmuneToFire().group(oretopia.ORETOPIAITEMGROUP)){
                 @Override
                 public void addInformation(ItemStack stack, @Nullable World worldIn,
                                            List<ITextComponent> tooltip, ITooltipFlag flagIn) {
@@ -344,7 +344,7 @@ public class ModItems {
 
 
     public static final RegistryObject<Item> COBALT = ITEMS.register("cobalt",
-            () -> new Item(new Item.Properties().group(ModItemGroup.oretopia)){
+            () -> new Item(new Item.Properties().group(oretopia.ORETOPIAITEMGROUP)){
                 @Override
                 public void addInformation(ItemStack stack, @Nullable World worldIn,
                                            List<ITextComponent> tooltip, ITooltipFlag flagIn) {
@@ -358,7 +358,7 @@ public class ModItems {
             });
 
     public static final RegistryObject<Item> COBALTNUGGET = ITEMS.register("cobaltnugget",
-            () -> new Item(new Item.Properties().group(ModItemGroup.oretopia)){
+            () -> new Item(new Item.Properties().group(oretopia.ORETOPIAITEMGROUP)){
                 @Override
                 public void addInformation(ItemStack stack, @Nullable World worldIn,
                                            List<ITextComponent> tooltip, ITooltipFlag flagIn) {
@@ -372,7 +372,7 @@ public class ModItems {
             });
 
     public static final RegistryObject<Item> ORETOPIUM = ITEMS.register("oretopium",
-            () -> new Item(new Item.Properties().isImmuneToFire().group(ModItemGroup.oretopia)){
+            () -> new Item(new Item.Properties().isImmuneToFire().group(oretopia.ORETOPIAITEMGROUP)){
                 @Override
                 public void addInformation(ItemStack stack, @Nullable World worldIn,
                                            List<ITextComponent> tooltip, ITooltipFlag flagIn) {
@@ -386,7 +386,7 @@ public class ModItems {
             });
 
     public static final RegistryObject<Item> ORETOPIUMNUGGET = ITEMS.register("oretopiumnugget",
-            () -> new Item(new Item.Properties().isImmuneToFire().group(ModItemGroup.oretopia)){
+            () -> new Item(new Item.Properties().isImmuneToFire().group(oretopia.ORETOPIAITEMGROUP)){
                 @Override
                 public void addInformation(ItemStack stack, @Nullable World worldIn,
                                            List<ITextComponent> tooltip, ITooltipFlag flagIn) {
@@ -400,7 +400,7 @@ public class ModItems {
             });
 
     public static final RegistryObject<Item> RADIOUM = ITEMS.register("radioum",
-            () -> new Item(new Item.Properties().isImmuneToFire().group(ModItemGroup.oretopia)){
+            () -> new Item(new Item.Properties().isImmuneToFire().group(oretopia.ORETOPIAITEMGROUP)){
                 @Override
                 public void addInformation(ItemStack stack, @Nullable World worldIn,
                                            List<ITextComponent> tooltip, ITooltipFlag flagIn) {
@@ -414,7 +414,7 @@ public class ModItems {
             });
 
     public static final RegistryObject<Item> RADIOUMNUGGET = ITEMS.register("radioumnugget",
-            () -> new Item(new Item.Properties().isImmuneToFire().group(ModItemGroup.oretopia)){
+            () -> new Item(new Item.Properties().isImmuneToFire().group(oretopia.ORETOPIAITEMGROUP)){
                 @Override
                 public void addInformation(ItemStack stack, @Nullable World worldIn,
                                            List<ITextComponent> tooltip, ITooltipFlag flagIn) {
@@ -430,7 +430,7 @@ public class ModItems {
     public static final RegistryObject<Item> RAWBACONITE = ITEMS.register("rawbaconite",
             () -> new Item(new Item.Properties()
                     .food(new Food.Builder().hunger(3).saturation(0.2f).build())
-                    .group(ModItemGroup.oretopia)){
+                    .group(oretopia.ORETOPIAITEMGROUP)){
                 @Override
                 public void addInformation(ItemStack stack, @Nullable World worldIn,
                                            List<ITextComponent> tooltip, ITooltipFlag flagIn) {
@@ -446,7 +446,7 @@ public class ModItems {
     public static final RegistryObject<Item> COOKEDBACONITE = ITEMS.register("cookedbaconite",
             () -> new Item(new Item.Properties()
                     .food(new Food.Builder().hunger(8).saturation(0.5f).build())
-                    .group(ModItemGroup.oretopia)){
+                    .group(oretopia.ORETOPIAITEMGROUP)){
                 @Override
                 public void addInformation(ItemStack stack, @Nullable World worldIn,
                                            List<ITextComponent> tooltip, ITooltipFlag flagIn) {
@@ -460,7 +460,7 @@ public class ModItems {
             });
 
     public static final RegistryObject<Item> CORRUPTIUMNUGGET = ITEMS.register("corruptiumnugget",
-            () -> new Item(new Item.Properties().isImmuneToFire().group(ModItemGroup.oretopia)){
+            () -> new Item(new Item.Properties().isImmuneToFire().group(oretopia.ORETOPIAITEMGROUP)){
                 @Override
                 public void addInformation(ItemStack stack, @Nullable World worldIn,
                                            List<ITextComponent> tooltip, ITooltipFlag flagIn) {
@@ -474,7 +474,7 @@ public class ModItems {
             });
 
     public static final RegistryObject<Item> CORRUPTIUM = ITEMS.register("corruptium",
-            () -> new Item(new Item.Properties().isImmuneToFire().group(ModItemGroup.oretopia)){
+            () -> new Item(new Item.Properties().isImmuneToFire().group(oretopia.ORETOPIAITEMGROUP)){
                 @Override
                 public void addInformation(ItemStack stack, @Nullable World worldIn,
                                            List<ITextComponent> tooltip, ITooltipFlag flagIn) {
@@ -488,7 +488,7 @@ public class ModItems {
             });
 
     public static final RegistryObject<Item> TITANIUM = ITEMS.register("titanium",
-            () -> new Item(new Item.Properties().isImmuneToFire().group(ModItemGroup.oretopia)){
+            () -> new Item(new Item.Properties().isImmuneToFire().group(oretopia.ORETOPIAITEMGROUP)){
                 @Override
                 public void addInformation(ItemStack stack, @Nullable World worldIn,
                                            List<ITextComponent> tooltip, ITooltipFlag flagIn) {
@@ -502,7 +502,7 @@ public class ModItems {
             });
 
     public static final RegistryObject<Item> TITANIUMNUGGET = ITEMS.register("titaniumnugget",
-            () -> new Item(new Item.Properties().isImmuneToFire().group(ModItemGroup.oretopia)){
+            () -> new Item(new Item.Properties().isImmuneToFire().group(oretopia.ORETOPIAITEMGROUP)){
                 @Override
                 public void addInformation(ItemStack stack, @Nullable World worldIn,
                                            List<ITextComponent> tooltip, ITooltipFlag flagIn) {
@@ -516,7 +516,7 @@ public class ModItems {
             });
 
     public static final RegistryObject<Item> ENDERSHARD = ITEMS.register("endershard",
-            () -> new Item(new Item.Properties().group(ModItemGroup.oretopia)){
+            () -> new Item(new Item.Properties().group(oretopia.ORETOPIAITEMGROUP)){
                 @Override
                 public void addInformation(ItemStack stack, @Nullable World worldIn,
                                            List<ITextComponent> tooltip, ITooltipFlag flagIn) {
@@ -530,7 +530,7 @@ public class ModItems {
             });
 
     public static final RegistryObject<Item> MUSICDISCSHARD = ITEMS.register("musicdiscshard",
-            () -> new Item(new Item.Properties().group(ModItemGroup.oretopia)){
+            () -> new Item(new Item.Properties().group(oretopia.ORETOPIAITEMGROUP)){
                 @Override
                 public void addInformation(ItemStack stack, @Nullable World worldIn,
                                            List<ITextComponent> tooltip, ITooltipFlag flagIn) {
@@ -546,7 +546,7 @@ public class ModItems {
 public static final RegistryObject<Item> EDIBLEBRICK = ITEMS.register("ediblebrick",
             () -> new Item(new Item.Properties()
                     .food(new Food.Builder().hunger(1).saturation(0f).setAlwaysEdible().effect(() -> new EffectInstance(Effects.INSTANT_DAMAGE, 1, 100), 1f).build())
-                    .group(ModItemGroup.oretopia)){
+                    .group(oretopia.ORETOPIAITEMGROUP)){
                 @Override
                 public void addInformation(ItemStack stack, @Nullable World worldIn,
                                            List<ITextComponent> tooltip, ITooltipFlag flagIn) {
@@ -560,7 +560,7 @@ public static final RegistryObject<Item> EDIBLEBRICK = ITEMS.register("ediblebri
             });
 
 public static final RegistryObject<Item> ESSENCE = ITEMS.register("essence",
-            () -> new Item(new Item.Properties().group(ModItemGroup.oretopia)){
+            () -> new Item(new Item.Properties().group(oretopia.ORETOPIAITEMGROUP)){
                 @Override
                 public void addInformation(ItemStack stack, @Nullable World worldIn,
                                            List<ITextComponent> tooltip, ITooltipFlag flagIn) {
@@ -574,7 +574,7 @@ public static final RegistryObject<Item> ESSENCE = ITEMS.register("essence",
             });
 
 public static final RegistryObject<Item> ENCHANTEDESSENCE = ITEMS.register("enchantedessence",
-            () -> new CosmeticEnchantedItem(new Item.Properties().group(ModItemGroup.oretopia)){
+            () -> new CosmeticEnchantedItem(new Item.Properties().group(oretopia.ORETOPIAITEMGROUP)){
                 @Override
                 public void addInformation(ItemStack stack, @Nullable World worldIn,
                                            List<ITextComponent> tooltip, ITooltipFlag flagIn) {
