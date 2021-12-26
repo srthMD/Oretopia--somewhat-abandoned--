@@ -31,21 +31,14 @@ import java.util.stream.Collectors;
 @Mod(oretopia.MOD_ID)
 public class oretopia
 {
-    public static final ItemGroup ORETOPIAITEMGROUP = new ItemGroup("Oretopia") {
-        @Override
-        public ItemStack createIcon() {
-            return null;
-        }
-
-        @OnlyIn(Dist.CLIENT)
-        public ItemStack func_78016_d() {
-            return new ItemStack((IItemProvider)ModItems.ENCHANTEDESSENCE.get());
-        }
-    };
+    //item group
+        public static final ItemGroup ORETOPIAITEMGROUP = new ItemGroup("ORETOPIAITEMGROUP") {
+            @Override
+            public ItemStack createIcon() {
+                return new ItemStack(ModItems.ENCHANTEDESSENCE.get());
+            }
+        };
     public static final String MOD_ID = "oretopia";
-
-
-    // Directly reference a log4j logger.
     private static final Logger LOGGER = LogManager.getLogger();
 
     public oretopia() {
