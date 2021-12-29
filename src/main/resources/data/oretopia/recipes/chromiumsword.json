@@ -1,19 +1,19 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "## ",
-    " S ",
+    " # ",
+    " # ",
     " S "
   ],
   "key": {
     "#": {
-      "tag": "forge:ingots/copper"
+      "tag": "forge:ingots/chromium"
     },
     "S": {
       "item": "minecraft:stick"
     }
   },
   "result": {
-    "item": "oretopia:copperhoe"
+    "item": "oretopia:chromiumsword"
   }
 }

@@ -1,19 +1,19 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "## ",
-    "#S ",
+    " ##",
+    " S ",
     " S "
   ],
   "key": {
     "#": {
-      "tag": "forge:ingots/romium"
+      "tag": "forge:ingots/chromium"
     },
     "S": {
       "item": "minecraft:stick"
     }
   },
   "result": {
-    "item": "oretopia:romiumaxe"
+    "item": "oretopia:chromiumhoe"
   }
 }

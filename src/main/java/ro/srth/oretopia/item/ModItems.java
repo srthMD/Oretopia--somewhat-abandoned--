@@ -328,6 +328,81 @@ public class ModItems {
                 }
             });
 
+    public static final RegistryObject<Item> CHROMIUMSWORD = ITEMS.register("chromiumsword",
+            () -> new ShovelItem(ModItemTier.COPPER, 2, -2.4f,
+                    new Item.Properties().group(oretopia.ORETOPIAITEMGROUP)){
+                @Override
+                public void addInformation(ItemStack stack, @Nullable World worldIn,
+                                           List<ITextComponent> tooltip, ITooltipFlag flagIn) {
+                    if(Screen.hasShiftDown())
+                        tooltip.add(new TranslationTextComponent(("tooltip.oretopia.chromiumsword")));
+                    else {
+                        tooltip.add(new TranslationTextComponent(("tooltip.oretopia.default")));
+                    }
+
+                }
+            });
+
+    public static final RegistryObject<Item> CHROMIUMPICKAXE = ITEMS.register("chromiumpickaxe",
+            () -> new ShovelItem(ModItemTier.COPPER, 1, -2.6f,
+                    new Item.Properties().group(oretopia.ORETOPIAITEMGROUP)){
+                @Override
+                public void addInformation(ItemStack stack, @Nullable World worldIn,
+                                           List<ITextComponent> tooltip, ITooltipFlag flagIn) {
+                    if(Screen.hasShiftDown())
+                        tooltip.add(new TranslationTextComponent(("tooltip.oretopia.chromiumpickaxe")));
+                    else {
+                        tooltip.add(new TranslationTextComponent(("tooltip.oretopia.default")));
+                    }
+
+                }
+            });
+
+public static final RegistryObject<Item> CHROMIUMAXE = ITEMS.register("chromiumaxe",
+            () -> new ShovelItem(ModItemTier.COPPER, 3, -2.8f,
+                    new Item.Properties().group(oretopia.ORETOPIAITEMGROUP)){
+                @Override
+                public void addInformation(ItemStack stack, @Nullable World worldIn,
+                                           List<ITextComponent> tooltip, ITooltipFlag flagIn) {
+                    if(Screen.hasShiftDown())
+                        tooltip.add(new TranslationTextComponent(("tooltip.oretopia.chromiumaxe")));
+                    else {
+                        tooltip.add(new TranslationTextComponent(("tooltip.oretopia.default")));
+                    }
+
+                }
+            });
+
+public static final RegistryObject<Item> CHROMIUMSHOVEL = ITEMS.register("chromiumshovel",
+            () -> new ShovelItem(ModItemTier.COPPER, 1, -2.6f,
+                    new Item.Properties().group(oretopia.ORETOPIAITEMGROUP)){
+                @Override
+                public void addInformation(ItemStack stack, @Nullable World worldIn,
+                                           List<ITextComponent> tooltip, ITooltipFlag flagIn) {
+                    if(Screen.hasShiftDown())
+                        tooltip.add(new TranslationTextComponent(("tooltip.oretopia.chromiumshovel")));
+                    else {
+                        tooltip.add(new TranslationTextComponent(("tooltip.oretopia.default")));
+                    }
+
+                }
+            });
+
+public static final RegistryObject<Item> CHROMIUMHOE = ITEMS.register("chromiumhoe",
+            () -> new ShovelItem(ModItemTier.COPPER, 1, -2.6f,
+                    new Item.Properties().group(oretopia.ORETOPIAITEMGROUP)){
+                @Override
+                public void addInformation(ItemStack stack, @Nullable World worldIn,
+                                           List<ITextComponent> tooltip, ITooltipFlag flagIn) {
+                    if(Screen.hasShiftDown())
+                        tooltip.add(new TranslationTextComponent(("tooltip.oretopia.chromiumhoe")));
+                    else {
+                        tooltip.add(new TranslationTextComponent(("tooltip.oretopia.default")));
+                    }
+
+                }
+            });
+
     public static final RegistryObject<Item> CHROMIUMNUGGET = ITEMS.register("chromiumnugget",
             () -> new Item(new Item.Properties().isImmuneToFire().group(oretopia.ORETOPIAITEMGROUP)){
                 @Override
