@@ -329,7 +329,7 @@ public class ModItems {
             });
 
     public static final RegistryObject<Item> CHROMIUMSWORD = ITEMS.register("chromiumsword",
-            () -> new ShovelItem(ModItemTier.COPPER, 2, -2.4f,
+            () -> new SwordItem(ModItemTier.CHROMIUM, 2, -2.6f,
                     new Item.Properties().group(oretopia.ORETOPIAITEMGROUP)){
                 @Override
                 public void addInformation(ItemStack stack, @Nullable World worldIn,
@@ -344,7 +344,7 @@ public class ModItems {
             });
 
     public static final RegistryObject<Item> CHROMIUMPICKAXE = ITEMS.register("chromiumpickaxe",
-            () -> new ShovelItem(ModItemTier.COPPER, 1, -2.6f,
+            () -> new PickaxeItem(ModItemTier.CHROMIUM, 1, -2.8f,
                     new Item.Properties().group(oretopia.ORETOPIAITEMGROUP)){
                 @Override
                 public void addInformation(ItemStack stack, @Nullable World worldIn,
@@ -359,7 +359,7 @@ public class ModItems {
             });
 
 public static final RegistryObject<Item> CHROMIUMAXE = ITEMS.register("chromiumaxe",
-            () -> new ShovelItem(ModItemTier.COPPER, 3, -2.8f,
+            () -> new AxeItem(ModItemTier.CHROMIUM, 3, -3f,
                     new Item.Properties().group(oretopia.ORETOPIAITEMGROUP)){
                 @Override
                 public void addInformation(ItemStack stack, @Nullable World worldIn,
@@ -374,7 +374,7 @@ public static final RegistryObject<Item> CHROMIUMAXE = ITEMS.register("chromiuma
             });
 
 public static final RegistryObject<Item> CHROMIUMSHOVEL = ITEMS.register("chromiumshovel",
-            () -> new ShovelItem(ModItemTier.COPPER, 1, -2.6f,
+            () -> new ShovelItem(ModItemTier.CHROMIUM, 1, -2.8f,
                     new Item.Properties().group(oretopia.ORETOPIAITEMGROUP)){
                 @Override
                 public void addInformation(ItemStack stack, @Nullable World worldIn,
@@ -389,7 +389,7 @@ public static final RegistryObject<Item> CHROMIUMSHOVEL = ITEMS.register("chromi
             });
 
 public static final RegistryObject<Item> CHROMIUMHOE = ITEMS.register("chromiumhoe",
-            () -> new ShovelItem(ModItemTier.COPPER, 1, -2.6f,
+            () -> new HoeItem(ModItemTier.CHROMIUM, 1, -2.8f,
                     new Item.Properties().group(oretopia.ORETOPIAITEMGROUP)){
                 @Override
                 public void addInformation(ItemStack stack, @Nullable World worldIn,
