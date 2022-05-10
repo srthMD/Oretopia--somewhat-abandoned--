@@ -34,6 +34,9 @@ public class ModSoundEvents {
     public static final RegistryObject<SoundEvent> MODCAVE7 =
             registerSoundevent("modcave7");
 
+    public static final RegistryObject<SoundEvent> MODCAVE8 =
+            registerSoundevent("modcave8");
+
 
     private static RegistryObject<SoundEvent> registerSoundevent(String name) {
         return SOUND_EVENTS.register(name, () -> new SoundEvent(new ResourceLocation(oretopia.MOD_ID, name)));
