@@ -49,6 +49,13 @@
     "sounds": [
       "oretopia:modcave7"
     ]
+  },
+  "modcave8": {
+    "category": "ambient",
+    "subtitle": "oretopia.modcave8",
+    "sounds": [
+      "oretopia:modcave8"
+    ]
   }
 
 }
