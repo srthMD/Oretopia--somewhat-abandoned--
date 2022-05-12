@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "#C#",
+    "###"
+  ],
+  "key": {
+    "C": {
+      "tag": "forge:ingots/cobalt"
+    },
+    "#": {
+      "item": "oretopia:musicdiscshard"
+    }
+  },
+  "result": {
+    "item": "minecraft:music_disc_wait"
+  }
+}

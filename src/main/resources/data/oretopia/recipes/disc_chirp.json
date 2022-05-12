@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "#R#",
+    "###"
+  ],
+  "key": {
+    "R": {
+      "tag": "forge:gems/ruby"
+    },
+    "#": {
+      "item": "oretopia:musicdiscshard"
+    }
+  },
+  "result": {
+    "item": "minecraft:music_disc_chirp"
+  }
+}

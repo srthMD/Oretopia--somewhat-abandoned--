@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "#G#",
+    "###"
+  ],
+  "key": {
+    "G": {
+        "item": "minecraft:gold_ingot"
+  },
+    "#": {
+      "item": "oretopia:musicdiscshard"
+    }
+  },
+  "result": {
+    "item": "minecraft:music_disc_13"
+  }
+}

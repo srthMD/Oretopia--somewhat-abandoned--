@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "#E#",
+    "###"
+  ],
+  "key": {
+    "E": {
+      "tag": "forge:essence/essence"
+    },
+    "#": {
+      "item": "oretopia:musicdiscshard"
+    }
+  },
+  "result": {
+    "item": "minecraft:music_disc_strad"
+  }
+}
