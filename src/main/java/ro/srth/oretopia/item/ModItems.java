@@ -446,6 +446,81 @@ public static final RegistryObject<Item> CHROMIUMHOE = ITEMS.register("chromiumh
                 }
             });
 
+    public static final RegistryObject<Item> COBALTSWORD = ITEMS.register("cobaltsword",
+            () -> new SwordItem(ModItemTier.COBALT, 2, -2.6f,
+                    new Item.Properties().group(oretopia.ORETOPIAITEMGROUP)){
+                @Override
+                public void addInformation(ItemStack stack, @Nullable World worldIn,
+                                           List<ITextComponent> tooltip, ITooltipFlag flagIn) {
+                    if(Screen.hasShiftDown())
+                        tooltip.add(new TranslationTextComponent(("tooltip.oretopia.cobaltsword")));
+                    else {
+                        tooltip.add(new TranslationTextComponent(("tooltip.oretopia.default")));
+                    }
+
+                }
+            });
+
+    public static final RegistryObject<Item> COBALTPICKAXE = ITEMS.register("cobaltpickaxe",
+            () -> new PickaxeItem(ModItemTier.COBALT, 1, -2.8f,
+                    new Item.Properties().group(oretopia.ORETOPIAITEMGROUP)){
+                @Override
+                public void addInformation(ItemStack stack, @Nullable World worldIn,
+                                           List<ITextComponent> tooltip, ITooltipFlag flagIn) {
+                    if(Screen.hasShiftDown())
+                        tooltip.add(new TranslationTextComponent(("tooltip.oretopia.cobaltpickaxe")));
+                    else {
+                        tooltip.add(new TranslationTextComponent(("tooltip.oretopia.default")));
+                    }
+
+                }
+            });
+
+    public static final RegistryObject<Item> COBALTAXE = ITEMS.register("cobaltaxe",
+            () -> new AxeItem(ModItemTier.COBALT, 3, -3f,
+                    new Item.Properties().group(oretopia.ORETOPIAITEMGROUP)){
+                @Override
+                public void addInformation(ItemStack stack, @Nullable World worldIn,
+                                           List<ITextComponent> tooltip, ITooltipFlag flagIn) {
+                    if(Screen.hasShiftDown())
+                        tooltip.add(new TranslationTextComponent(("tooltip.oretopia.cobaltaxe")));
+                    else {
+                        tooltip.add(new TranslationTextComponent(("tooltip.oretopia.default")));
+                    }
+
+                }
+            });
+
+    public static final RegistryObject<Item> COBALTSHOVEL = ITEMS.register("cobaltshovel",
+            () -> new ShovelItem(ModItemTier.COBALT, 1, -2.8f,
+                    new Item.Properties().group(oretopia.ORETOPIAITEMGROUP)){
+                @Override
+                public void addInformation(ItemStack stack, @Nullable World worldIn,
+                                           List<ITextComponent> tooltip, ITooltipFlag flagIn) {
+                    if(Screen.hasShiftDown())
+                        tooltip.add(new TranslationTextComponent(("tooltip.oretopia.cobaltshovel")));
+                    else {
+                        tooltip.add(new TranslationTextComponent(("tooltip.oretopia.default")));
+                    }
+
+                }
+            });
+
+    public static final RegistryObject<Item> COBALTHOE = ITEMS.register("cobalthoe",
+            () -> new HoeItem(ModItemTier.COBALT, 1, -2.8f,
+                    new Item.Properties().group(oretopia.ORETOPIAITEMGROUP)){
+                @Override
+                public void addInformation(ItemStack stack, @Nullable World worldIn,
+                                           List<ITextComponent> tooltip, ITooltipFlag flagIn) {
+                    if(Screen.hasShiftDown())
+                        tooltip.add(new TranslationTextComponent(("tooltip.oretopia.cobalthoe")));
+                    else {
+                        tooltip.add(new TranslationTextComponent(("tooltip.oretopia.default")));
+                    }
+
+                }
+            });
+
     public static final RegistryObject<Item> ORETOPIUM = ITEMS.register("oretopium",
             () -> new Item(new Item.Properties().isImmuneToFire().group(oretopia.ORETOPIAITEMGROUP)){
                 @Override

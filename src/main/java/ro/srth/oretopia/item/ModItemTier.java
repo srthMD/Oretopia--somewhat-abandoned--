@@ -8,15 +8,15 @@ import java.util.function.Supplier;
 
 public enum ModItemTier implements IItemTier {
 
-    ROMIUM(3, 400, 7f, 5f, 11, () -> Ingredient.fromItems((ModItems.ROMIUM.get()))),
-    COPPER(2, 60, 4f, 4f, 8, () -> Ingredient.fromItems((ModItems.COPPER.get()))),
-    TUNGSTEN(3, 1250, 9f, 6f, 10, () -> Ingredient.fromItems((ModItems.TUNGSTEN.get()))),
-    COBALT(2, 200, 5.5f, 4f, 8, () -> Ingredient.fromItems((ModItems.COBALT.get()))),
+    ROMIUM(3, 400, 7f, 4f, 11, () -> Ingredient.fromItems((ModItems.ROMIUM.get()))),
+    COPPER(2, 60, 4f, 3f, 8, () -> Ingredient.fromItems((ModItems.COPPER.get()))),
+    TUNGSTEN(3, 1250, 9f, 5f, 10, () -> Ingredient.fromItems((ModItems.TUNGSTEN.get()))),
+    COBALT(2, 225, 5.5f, 3f, 8, () -> Ingredient.fromItems((ModItems.COBALT.get()))),
     CHROMIUM(3, 700, 7.5f, 5f, 15, () -> Ingredient.fromItems((ModItems.CHROMIUM.get()))),
-    RUBY(3, 1100, 9f, 6f, 15, () -> Ingredient.fromItems((ModItems.RUBY.get()))),
-    RADIOUM(4, 1000, 8f, 7f, 20, () -> Ingredient.fromItems((ModItems.RADIOUM.get()))),
-    ORETOPIUM(4, 2000, 10f, 9f, 25, () -> Ingredient.fromItems((ModItems.ORETOPIUM.get()))),
-    TITANIUM(3, 700, 8f, 6f, 13, () -> Ingredient.fromItems((ModItems.TITANIUM.get()))),
+    RUBY(3, 900, 9f, 5.5f, 15, () -> Ingredient.fromItems((ModItems.RUBY.get()))),
+    RADIOUM(4, 1000, 8f, 6f, 20, () -> Ingredient.fromItems((ModItems.RADIOUM.get()))),
+    ORETOPIUM(4, 2000, 10f, 8f, 25, () -> Ingredient.fromItems((ModItems.ORETOPIUM.get()))),
+    TITANIUM(3, 800, 8f, 4.5f, 13, () -> Ingredient.fromItems((ModItems.TITANIUM.get()))),
     CORRUPTIUM(4, 3000, 14f, 15f, 40, () -> Ingredient.fromItems((ModItems.CORRUPTIUM.get()))),
     ;
 
