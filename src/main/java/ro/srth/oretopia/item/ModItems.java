@@ -69,7 +69,7 @@ public class ModItems {
             });
 
     public static final RegistryObject<Item> ROMIUMPICKAXE = ITEMS.register("romiumpickaxe",
-            () -> new PickaxeItem(ModItemTier.ROMIUM, -1, -2.6f,
+            () -> new PickaxeItem(ModItemTier.ROMIUM, 0, -2.6f,
                     new Item.Properties().group(oretopia.ORETOPIAITEMGROUP)){
                 @Override
                 public void addInformation(ItemStack stack, @Nullable World worldIn,
@@ -297,8 +297,6 @@ public class ModItems {
                 }
             });
 
-    /* other ores */
-
     public static final RegistryObject<Item> RUBY = ITEMS.register("ruby",
             () -> new Item(new Item.Properties().isImmuneToFire().group(oretopia.ORETOPIAITEMGROUP)){
                 @Override
@@ -313,6 +311,33 @@ public class ModItems {
                 }
             });
 
+public static final RegistryObject<Item> BLACKDIAMOND = ITEMS.register("blackdiamond",
+            () -> new Item(new Item.Properties().isImmuneToFire().group(oretopia.ORETOPIAITEMGROUP)){
+                @Override
+                public void addInformation(ItemStack stack, @Nullable World worldIn,
+                                           List<ITextComponent> tooltip, ITooltipFlag flagIn) {
+                    if(Screen.hasShiftDown())
+                        tooltip.add(new TranslationTextComponent(("tooltip.oretopia.blackdiamond")));
+                    else {
+                        tooltip.add(new TranslationTextComponent(("tooltip.oretopia.default")));
+                    }
+
+                }
+            });
+
+public static final RegistryObject<Item> SAPPHIRE = ITEMS.register("sapphire",
+            () -> new Item(new Item.Properties().isImmuneToFire().group(oretopia.ORETOPIAITEMGROUP)){
+                @Override
+                public void addInformation(ItemStack stack, @Nullable World worldIn,
+                                           List<ITextComponent> tooltip, ITooltipFlag flagIn) {
+                    if(Screen.hasShiftDown())
+                        tooltip.add(new TranslationTextComponent(("tooltip.oretopia.sapphire")));
+                    else {
+                        tooltip.add(new TranslationTextComponent(("tooltip.oretopia.default")));
+                    }
+
+                }
+            });
 
     public static final RegistryObject<Item> CHROMIUM = ITEMS.register("chromium",
             () -> new Item(new Item.Properties().isImmuneToFire().group(oretopia.ORETOPIAITEMGROUP)){

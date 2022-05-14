@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "#B#",
+    "###"
+  ],
+  "key": {
+    "B": {
+      "tag": "forge:gems/blackdiamond"
+    },
+    "#": {
+      "item": "oretopia:musicdiscshard"
+    }
+  },
+  "result": {
+    "item": "minecraft:music_disc_stal"
+  }
+}

@@ -25,6 +25,7 @@ public class ModOreGeneration {
         // SPECIFIC MODDED BIOME spawnOreInSpecificModBiome(ModBiomes.samplebiome.get(), OreType.sample, event, Dimension.OVERWORLD.toString());
         // SPECIFIC VANILLA BIOME spawnOreInSpecificBiome(Biomes.DARK_FOREST, OreType.sample, event, Dimension.OVERWORLD.toString());
         /* SPECIFIC DIMENSION */ spawnOreInAllBiomes(OreType.NETHER_RADIOUMORE, event, Dimension.THE_NETHER.toString());
+        spawnOreInAllBiomes(OreType.BLACKDIAMOND, event, Dimension.THE_NETHER.toString());
         spawnOreInAllBiomes(OreType.TUNGSTEN, event, Dimension.OVERWORLD.toString());
         spawnOreInAllBiomes(OreType.RADIOUM, event, Dimension.OVERWORLD.toString());
         spawnOreInAllBiomes(OreType.RUBY, event, Dimension.OVERWORLD.toString());
@@ -40,6 +41,7 @@ public class ModOreGeneration {
         spawnOreInAllBiomes(OreType.ENDERSHARD, event, Dimension.OVERWORLD.toString());
         spawnOreInAllBiomes(OreType.END_ENDERSHARD, event, Dimension.THE_END.toString());
         spawnOreInAllBiomes(OreType.MUSICDISC, event, Dimension.OVERWORLD.toString());
+        spawnOreInAllBiomes(OreType.SAPPHIRE, event, Dimension.OVERWORLD.toString());
         spawnOreInSpecificBiome(Biomes.DARK_FOREST, OreType.ESSENCE, event, Dimension.OVERWORLD.toString());
         spawnOreInSpecificBiome(Biomes.DARK_FOREST_HILLS, OreType.ESSENCE, event, Dimension.OVERWORLD.toString());
         spawnOreInSpecificBiome(Biomes.BIRCH_FOREST, OreType.ESSENCE, event, Dimension.OVERWORLD.toString());

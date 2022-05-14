@@ -290,7 +290,6 @@ public static final RegistryObject<Block> BLOCKOFCHROMIUM = registerBlock("block
                     else {
                         tooltip.add(new TranslationTextComponent(("tooltip.oretopia.default")));
                     }
-
                 }
             });
 
@@ -441,6 +440,36 @@ public static final RegistryObject<Block> ESSENCEORE = registerBlock("essenceore
                                            List<ITextComponent> tooltip, ITooltipFlag flagIn) {
                     if(Screen.hasShiftDown())
                         tooltip.add(new TranslationTextComponent(("tooltip.oretopia.essenceore")));
+                    else {
+                        tooltip.add(new TranslationTextComponent(("tooltip.oretopia.default")));
+                    }
+
+                }
+            });
+
+public static final RegistryObject<Block> NETHER_BLACKDIAMONDORE = registerBlock("nether_blackdiamondore",
+            () -> new Block(AbstractBlock.Properties.create(Material.ROCK)
+                    .harvestLevel(2).setRequiresTool().harvestTool(ToolType.PICKAXE).hardnessAndResistance(9f)){
+                @Override
+                public void addInformation(ItemStack stack, @Nullable IBlockReader worldIn,
+                                           List<ITextComponent> tooltip, ITooltipFlag flagIn) {
+                    if(Screen.hasShiftDown())
+                        tooltip.add(new TranslationTextComponent(("tooltip.oretopia.nether_blackdiamondore")));
+                    else {
+                        tooltip.add(new TranslationTextComponent(("tooltip.oretopia.default")));
+                    }
+
+                }
+            });
+
+public static final RegistryObject<Block> SAPPHIREORE = registerBlock("sapphireore",
+            () -> new Block(AbstractBlock.Properties.create(Material.ROCK)
+                    .harvestLevel(2).setRequiresTool().harvestTool(ToolType.PICKAXE).hardnessAndResistance(7f)){
+                @Override
+                public void addInformation(ItemStack stack, @Nullable IBlockReader worldIn,
+                                           List<ITextComponent> tooltip, ITooltipFlag flagIn) {
+                    if(Screen.hasShiftDown())
+                        tooltip.add(new TranslationTextComponent(("tooltip.oretopia.sapphireore")));
                     else {
                         tooltip.add(new TranslationTextComponent(("tooltip.oretopia.default")));
                     }

@@ -51,6 +51,8 @@ public class oretopiaTags {
         public static final Tags.IOptionalNamedTag<Item> BLOCKOFCOBALT = createForgeTag("blocks/cobalt");
         public static final Tags.IOptionalNamedTag<Item> RUBYORE = createForgeTag("ores/ruby");
         public static final Tags.IOptionalNamedTag<Item> RUBY = createForgeTag("gems/ruby");
+        public static final Tags.IOptionalNamedTag<Item> SAPPHIRE = createForgeTag("gems/sapphire");
+        public static final Tags.IOptionalNamedTag<Item> BLACKDIAMOND = createForgeTag("gems/blackdiamond");
         public static final Tags.IOptionalNamedTag<Item> RUBYBLOCK = createForgeTag("blocks/ruby");
         public static final Tags.IOptionalNamedTag<Item> ORETOPIUM = createForgeTag("ingots/oretopium");
         public static final Tags.IOptionalNamedTag<Item> ORETOPIUMNUGGET = createForgeTag("nuggets/oretopium");
