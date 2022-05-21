@@ -17,6 +17,7 @@ import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
+import ro.srth.oretopia.block.custom.RadioumTNT;
 import ro.srth.oretopia.item.ModItems;
 import ro.srth.oretopia.oretopia;
 
@@ -477,9 +478,7 @@ public static final RegistryObject<Block> SAPPHIREORE = registerBlock("sapphireo
                 }
             });
 
-/*
 
-FOR LATER IMPLEMTATION
 
  public static final RegistryObject<Block> RADIOUMTNT = registerBlock("radioumtnt",
              () -> new RadioumTNT(AbstractBlock.Properties.create(Material.TNT)
@@ -496,7 +495,6 @@ FOR LATER IMPLEMTATION
 
                  }
              });
-*/
 
 
     private static <T extends Block>RegistryObject<T> registerBlock(String name, Supplier<T> block) {

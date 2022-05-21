@@ -1,0 +1,11 @@
+{
+  "parent": "block/cube",
+  "textures":{
+    "down": "oretopia:block/radioumtntbottom",
+    "up": "oretopia:block/radioumtnt_top",
+    "north": "oretopia:block/radioumtnt",
+    "east": "oretopia:block/radioumtnt",
+    "south": "oretopia:block/radioumtnt",
+    "west": "oretopia:block/radioumtnt"
+  }
+}
