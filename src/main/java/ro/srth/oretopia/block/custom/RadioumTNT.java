@@ -67,9 +67,9 @@ public abstract class RadioumTNT extends TNTBlock {
      */
     public void onExplosionDestroy(World worldIn, BlockPos pos, Explosion explosionIn) {
         if (!worldIn.isRemote) {
-            TNTEntity tntentity = new TNTEntity(worldIn, (double)pos.getX() + 0.5D, (double)pos.getY(), (double)pos.getZ() + 0.5D, explosionIn.getExplosivePlacedBy());
-            tntentity.setFuse((short)(worldIn.rand.nextInt(tntentity.getFuse() / 4) + tntentity.getFuse() / 8));
-            worldIn.addEntity(tntentity);
+            RadioumTNTEntity radioumTNTEntity = new RadioumTNTEntity(worldIn, (double)pos.getX() + 0.5D, (double)pos.getY(), (double)pos.getZ() + 0.5D, explosionIn.getExplosivePlacedBy());
+            radioumTNTEntity.setFuse((short)(worldIn.rand.nextInt(radioumTNTEntity.getFuse() / 4) + radioumTNTEntity.getFuse() / 8));
+            worldIn.addEntity(radioumTNTEntity);
         }
     }
 
