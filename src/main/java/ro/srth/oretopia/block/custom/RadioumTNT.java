@@ -15,7 +15,6 @@ import ro.srth.oretopia.entity.RadioumTNTEntity;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.TNTBlock;
 import net.minecraft.entity.LivingEntity;
-import net.minecraft.entity.item.TNTEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;

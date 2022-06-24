@@ -11,6 +11,5 @@ public class oretopiaJEI implements IModPlugin{
     @Override
     public ResourceLocation getPluginUid() {
         return new ResourceLocation(oretopia.MOD_ID, "jei_plugin");
-
     }
 }

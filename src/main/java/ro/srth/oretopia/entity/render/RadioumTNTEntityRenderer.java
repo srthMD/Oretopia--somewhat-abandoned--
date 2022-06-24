@@ -13,7 +13,7 @@ import net.minecraft.util.math.vector.Vector3f;
 import ro.srth.oretopia.block.ModBlocks;
 import ro.srth.oretopia.block.custom.RadioumTNT;
 
-public abstract class RadioumTNTEntityRenderer extends TNTRenderer implements IRadioumTNTEntityRenderer {
+public abstract class RadioumTNTEntityRenderer extends TNTRenderer{
     public RadioumTNTEntityRenderer(EntityRendererManager renderManagerIn) {
         super(renderManagerIn);
         this.shadowSize = 0.5F;
